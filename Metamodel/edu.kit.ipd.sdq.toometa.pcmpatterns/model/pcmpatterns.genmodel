@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/edu.kit.ipd.sdq.toometa.pcmpatterns/src" modelPluginID="edu.kit.ipd.sdq.toometa.pcmpatterns"
+    modelName="Pcmpatterns" rootExtendsInterface="org.eclipse.emf.cdo.CDOObject" rootExtendsClass="org.eclipse.emf.internal.cdo.CDOObjectImpl"
+    importerID="org.eclipse.emf.importer.ecore" featureDelegation="Dynamic" complianceLevel="8.0"
+    copyrightFields="false" providerRootExtendsClass="" editPluginID="edu.kit.ipd.sdq.toometa.pcmpatterns.edit"
+    editorPluginID="edu.kit.ipd.sdq.toometa.pcmpatterns.editor" usedGenPackages="../../edu.kit.ipd.sdq.toometa.options/model/options.genmodel#//options ../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../edu.kit.ipd.sdq.toometa.effects/model/effects.genmodel#//effects ../../edu.kit.ipd.sdq.toometa.glossary/model/glossary.genmodel#//glossary platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.genmodel#//identifier ../../de.uka.ipd.sdq.namedelement/model/namedelement.genmodel#//namedelement ../../org.palladiosimulator.pcm/model/pcm.genmodel#//pcm ../../edu.kit.ipd.sdq.toometa.patterns/model/patterns.genmodel#//patterns ../../de.uka.ipd.sdq.probfunction/model/ProbabilityFunction.genmodel#//probfunction ../../edu.kit.ipd.sdq.toometa.qualities/model/qualities.genmodel#//qualities ../../edu.kit.ipd.sdq.toometa.relations/model/relations.genmodel#//relations ../../de.uka.ipd.sdq.stoex/model/stoex.genmodel#//stoex ../../de.uka.ipd.sdq.units/model/Units.genmodel#//units ../../de.uka.ipd.sdq.dsexplore.qml.dimensions/model/dimensions.genmodel#//dimensions ../../de.uka.ipd.sdq.dsexplore.qml.dimensiontypes/model/dimensiontypes.genmodel#//dimensiontypes ../../de.uka.ipd.sdq.dsexplore.qml.units/model/units.genmodel#//units"
+    importOrganizing="true">
+  <foreignModel>pcmpatterns.ecore</foreignModel>
+  <modelPluginVariables>CDO=org.eclipse.emf.cdo</modelPluginVariables>
+  <genPackages prefix="Pcmpatterns" basePackage="edu.kit.ipd.sdq.toometa" disposableProviderFactory="true"
+      ecorePackage="pcmpatterns.ecore#/">
+    <genClasses ecoreClass="pcmpatterns.ecore#//PCMRole" labelFeature="../../edu.kit.ipd.sdq.toometa.patterns/model/patterns.genmodel#//patterns/Role/desctiption">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pcmpatterns.ecore#//PCMRole/operationProvidedRole"/>
+    </genClasses>
+    <genClasses ecoreClass="pcmpatterns.ecore#//PCMConnector" labelFeature="../../edu.kit.ipd.sdq.toometa.patterns/model/patterns.genmodel#//patterns/Connector/description">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pcmpatterns.ecore#//PCMConnector/assemblyConnector"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/edu.kit.ipd.sdq.toometa.feature_1.0.0.201605201129.jar" id="edu.kit.ipd.sdq.toometa.feature" version="1.0.0.201605201129"/>
+   <feature url="features/de.uka.ipd.sdq.dsexplore.qml.toometa.feature_1.0.0.201605201129.jar" id="de.uka.ipd.sdq.dsexplore.qml.toometa.feature" version="1.0.0.201605201129"/>
+   <feature url="features/de.uka.ipd.sdq.namedelement.feature_1.0.0.201605201129.jar" id="de.uka.ipd.sdq.namedelement.feature" version="1.0.0.201605201129"/>
+</site>

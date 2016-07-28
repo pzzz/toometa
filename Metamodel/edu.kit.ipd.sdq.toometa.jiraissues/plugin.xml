@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated jiraissues -->
+      <package
+            uri="http://sdq.ipd.kit.edu/toometa/jiraissues/1.0"
+            class="edu.kit.ipd.sdq.toometa.jiraissues.JiraissuesPackage"
+            genModel="model/jiraissues.genmodel"/>
+   </extension>
+
+</plugin>

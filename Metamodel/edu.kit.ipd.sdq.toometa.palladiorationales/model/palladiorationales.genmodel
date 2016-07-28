@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/edu.kit.ipd.sdq.toometa.palladiorationales/src"
+    modelPluginID="edu.kit.ipd.sdq.toometa.palladiorationales" modelName="Palladiorationales"
+    rootExtendsInterface="org.eclipse.emf.cdo.CDOObject" rootExtendsClass="org.eclipse.emf.internal.cdo.CDOObjectImpl"
+    importerID="org.eclipse.emf.importer.ecore" featureDelegation="Dynamic" complianceLevel="8.0"
+    copyrightFields="false" editPluginID="edu.kit.ipd.sdq.toometa.palladiorationales.edit"
+    editorPluginID="edu.kit.ipd.sdq.toometa.palladiorationales.editor" usedGenPackages="../../edu.kit.ipd.sdq.toometa.options/model/options.genmodel#//options ../../de.uka.ipd.sdq.dsexplore.qml.dimensions/model/dimensions.genmodel#//dimensions ../../de.uka.ipd.sdq.dsexplore.qml.dimensiontypes/model/dimensiontypes.genmodel#//dimensiontypes ../../org.palladiosimulator.edp2/model/EDP2.genmodel#//models ../../edu.kit.ipd.sdq.toometa.effects/model/effects.genmodel#//effects ../../edu.kit.ipd.sdq.toometa.glossary/model/glossary.genmodel#//glossary ../../de.uka.ipd.sdq.identifier/model/identifier.genmodel#//identifier platform:/plugin/org.palladiosimulator.metricspec/model/metricspec.genmodel#//metricspec ../../de.uka.ipd.sdq.namedelement/model/namedelement.genmodel#//namedelement ../../edu.kit.ipd.sdq.toometa.qualities/model/qualities.genmodel#//qualities ../../edu.kit.ipd.sdq.toometa.relations/model/relations.genmodel#//relations ../../de.uka.ipd.sdq.dsexplore.qml.units/model/units.genmodel#//units"
+    importOrganizing="true">
+  <foreignModel>palladiorationales.ecore</foreignModel>
+  <modelPluginVariables>CDO=org.eclipse.emf.cdo</modelPluginVariables>
+  <genPackages prefix="Palladiorationales" basePackage="edu.kit.ipd.sdq.toometa" disposableProviderFactory="true"
+      childCreationExtenders="true" ecorePackage="palladiorationales.ecore#/">
+    <genClasses ecoreClass="palladiorationales.ecore#//PalladioRationale">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference palladiorationales.ecore#//PalladioRationale/palladioResult"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated users -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="edu.kit.ipd.sdq.toometa.users.presentation.UsersModelWizardID"
+            name="%_UI_UsersModelWizard_label"
+            class="edu.kit.ipd.sdq.toometa.users.presentation.UsersModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/UsersModelFile.gif">
+         <description>%_UI_UsersModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated users -->
+      <editor
+            id="edu.kit.ipd.sdq.toometa.users.presentation.UsersEditorID"
+            name="%_UI_UsersEditor_label"
+            icon="icons/full/obj16/UsersModelFile.gif"
+            extensions="users"
+            class="edu.kit.ipd.sdq.toometa.users.presentation.UsersEditor"
+            contributorClass="edu.kit.ipd.sdq.toometa.users.presentation.UsersActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

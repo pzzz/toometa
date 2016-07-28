@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Toometa Traces"
+            id="edu.kit.ipd.sdq.toometa.traceview.extension">
+      </category>
+      <view
+            name="Toometa Traces"
+            icon="icons/sample.gif"
+            category="edu.kit.ipd.sdq.toometa.traceview.extension"
+            class="edu.kit.ipd.sdq.toometa.traceview.views.TracesView"
+            id="edu.kit.ipd.sdq.toometa.traceview.extension.views.TracesView">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               ratio="0.5"
+               relative="org.eclipse.ui.views.PropertySheet"
+               relationship="right"
+               id="edu.kit.ipd.sdq.toometa.traceview.extension.views.TracesView">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="edu.kit.ipd.sdq.toometa.traceview.commands.openTracesView"
+            name="openTracesView">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+       <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <command
+               commandId="edu.kit.ipd.sdq.toometa.traceview.commands.openTracesView"
+               label="Open Traces View">
+            <visibleWhen
+                  checkEnabled="false">
+               <iterate
+                     ifEmpty="false"
+                     operator="and">
+                  <reference
+                        definitionId="edu.kit.ipd.sdq.toometa.traceview.definitions.instanceOfAllRelations">
+                  </reference>
+                  <reference
+                        definitionId="edu.kit.ipd.sdq.toometa.traceview.definitions.activePartIdIsNotTracesView">
+                  </reference>
+               </iterate>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="edu.kit.ipd.sdq.toometa.traceview.handlers.CommandOpenTracesViewHandler"
+            commandId="edu.kit.ipd.sdq.toometa.traceview.commands.openTracesView">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commandImages">
+      <image
+            commandId="edu.kit.ipd.sdq.toometa.traceview.commands.openTracesView"
+            icon="icons/sample.gif">
+      </image>
+   </extension>
+   <extension
+         id="edu.kit.ipd.sdq.toometa.traceview.extension.views.TracesView"
+         point="org.eclipse.core.expressions.definitions">
+      <definition
+            id="edu.kit.ipd.sdq.toometa.traceview.definitions.instanceOfAllRelations">
+         <instanceof
+               value="edu.kit.ipd.sdq.toometa.relations.TraceableObject">
+         </instanceof>
+      </definition>
+      <definition
+            id="edu.kit.ipd.sdq.toometa.traceview.definitions.activePartIdIsNotTracesView">
+         <not>
+            <with
+                  variable="activePartId">
+               <equals
+                     value="edu.kit.ipd.sdq.toometa.traceview.extension.views.TracesView">
+               </equals>
+            </with>
+         </not>
+      </definition>
+   </extension>
+
+</plugin>

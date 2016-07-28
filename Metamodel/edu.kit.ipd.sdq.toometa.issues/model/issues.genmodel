@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/edu.kit.ipd.sdq.toometa.issues/src" modelPluginID="edu.kit.ipd.sdq.toometa.issues"
+    modelName="Issues" rootExtendsInterface="org.eclipse.emf.cdo.CDOObject" rootExtendsClass="org.eclipse.emf.internal.cdo.CDOObjectImpl"
+    importerID="org.eclipse.emf.importer.ecore" featureDelegation="Dynamic" complianceLevel="8.0"
+    copyrightFields="false" providerRootExtendsClass="" editPluginID="edu.kit.ipd.sdq.toometa.issues.edit"
+    editorPluginID="edu.kit.ipd.sdq.toometa.issues.editor" usedGenPackages="../../edu.kit.ipd.sdq.toometa.relations/model/relations.genmodel#//relations ../../de.uka.ipd.sdq.identifier/model/identifier.genmodel#//identifier"
+    importOrganizing="true">
+  <foreignModel>issues.ecore</foreignModel>
+  <modelPluginVariables>CDO=org.eclipse.emf.cdo</modelPluginVariables>
+  <genPackages prefix="Issues" basePackage="edu.kit.ipd.sdq.toometa" resource="XML"
+      disposableProviderFactory="true" extensibleProviderFactory="true" ecorePackage="issues.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="issues.ecore#//IssueStatusEnum">
+      <genEnumLiterals ecoreEnumLiteral="issues.ecore#//IssueStatusEnum/new"/>
+      <genEnumLiterals ecoreEnumLiteral="issues.ecore#//IssueStatusEnum/accepted"/>
+      <genEnumLiterals ecoreEnumLiteral="issues.ecore#//IssueStatusEnum/rejected"/>
+      <genEnumLiterals ecoreEnumLiteral="issues.ecore#//IssueStatusEnum/inProcess"/>
+      <genEnumLiterals ecoreEnumLiteral="issues.ecore#//IssueStatusEnum/resolved"/>
+      <genEnumLiterals ecoreEnumLiteral="issues.ecore#//IssueStatusEnum/closed"/>
+      <genEnumLiterals ecoreEnumLiteral="issues.ecore#//IssueStatusEnum/reopened"/>
+      <genEnumLiterals ecoreEnumLiteral="issues.ecore#//IssueStatusEnum/replaced"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="issues.ecore#//IssuePriorityEnum">
+      <genEnumLiterals ecoreEnumLiteral="issues.ecore#//IssuePriorityEnum/Trivial"/>
+      <genEnumLiterals ecoreEnumLiteral="issues.ecore#//IssuePriorityEnum/Minor"/>
+      <genEnumLiterals ecoreEnumLiteral="issues.ecore#//IssuePriorityEnum/Major"/>
+      <genEnumLiterals ecoreEnumLiteral="issues.ecore#//IssuePriorityEnum/Critical"/>
+      <genEnumLiterals ecoreEnumLiteral="issues.ecore#//IssuePriorityEnum/Blocker"/>
+    </genEnums>
+    <genClasses ecoreClass="issues.ecore#//IssueModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference issues.ecore#//IssueModel/issues"/>
+    </genClasses>
+    <genClasses ecoreClass="issues.ecore#//Issue" labelFeature="#//issues/Issue/description">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute issues.ecore#//Issue/summary"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute issues.ecore#//Issue/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute issues.ecore#//Issue/status"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute issues.ecore#//Issue/priority"/>
+    </genClasses>
+    <genClasses ecoreClass="issues.ecore#//TextIssue" labelFeature="#//issues/Issue/description"/>
+  </genPackages>
+</genmodel:GenModel>

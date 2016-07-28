@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated patterns -->
+      <package
+            uri="http://sdq.ipd.kit.edu/toometa/patterns/1.0"
+            class="edu.kit.ipd.sdq.toometa.patterns.PatternsPackage"
+            genModel="model/patterns.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated patterns -->
+      <package
+            uri="http://sdq.ipd.uka.de/edu.kit.ipd.sdq.toometa/patterns/patternoptions/1.0"
+            class="edu.kit.ipd.sdq.toometa.patterns.patternoptions.PatternoptionsPackage"
+            genModel="model/patterns.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated patterns -->
+      <package
+            uri="http://sdq.ipd.uka.de/edu.kit.ipd.sdq.toometa/patterns/questions/1.0"
+            class="edu.kit.ipd.sdq.toometa.patterns.questions.QuestionsPackage"
+            genModel="model/patterns.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated patterns -->
+      <package
+            uri="http:///edu.kit.ipd.sdq.toometa.de/patterns/patterninstances/0.6"
+            class="edu.kit.ipd.sdq.toometa.patterns.patterninstances.PatterninstancesPackage"
+            genModel="model/patterns.genmodel"/>
+   </extension>
+</plugin>

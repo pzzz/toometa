@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated palladiorationales -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="edu.kit.ipd.sdq.toometa.palladiorationales.presentation.PalladiorationalesModelWizardID"
+            name="%_UI_PalladiorationalesModelWizard_label"
+            class="edu.kit.ipd.sdq.toometa.palladiorationales.presentation.PalladiorationalesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/PalladiorationalesModelFile.gif">
+         <description>%_UI_PalladiorationalesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated palladiorationales -->
+      <editor
+            id="edu.kit.ipd.sdq.toometa.palladiorationales.presentation.PalladiorationalesEditorID"
+            name="%_UI_PalladiorationalesEditor_label"
+            icon="icons/full/obj16/PalladiorationalesModelFile.gif"
+            extensions="palladiorationales"
+            class="edu.kit.ipd.sdq.toometa.palladiorationales.presentation.PalladiorationalesEditor"
+            contributorClass="edu.kit.ipd.sdq.toometa.palladiorationales.presentation.PalladiorationalesActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

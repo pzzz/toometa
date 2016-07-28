@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
+      <!-- @generated patterns -->
+      <factory
+            uri="http://sdq.ipd.kit.edu/toometa/patterns/1.0"
+            class="edu.kit.ipd.sdq.toometa.patterns.provider.PatternsItemProviderAdapterFactory"
+            supportedTypes=
+              "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
+               org.eclipse.emf.edit.provider.IStructuredItemContentProvider
+               org.eclipse.emf.edit.provider.ITreeItemContentProvider
+               org.eclipse.emf.edit.provider.IItemLabelProvider
+               org.eclipse.emf.edit.provider.IItemPropertySource"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
+      <!-- @generated patterns -->
+      <factory
+            uri="http://sdq.ipd.uka.de/edu.kit.ipd.sdq.toometa/patterns/patternoptions/1.0"
+            class="edu.kit.ipd.sdq.toometa.patterns.patternoptions.provider.PatternoptionsItemProviderAdapterFactory"
+            supportedTypes=
+              "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
+               org.eclipse.emf.edit.provider.IStructuredItemContentProvider
+               org.eclipse.emf.edit.provider.ITreeItemContentProvider
+               org.eclipse.emf.edit.provider.IItemLabelProvider
+               org.eclipse.emf.edit.provider.IItemPropertySource"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.childCreationExtenders">
+      <!-- @generated patterns -->
+      <extender
+            uri="http://sdq.ipd.kit.edu/toometa/options/1.0"
+            class="edu.kit.ipd.sdq.toometa.patterns.patternoptions.provider.PatternoptionsItemProviderAdapterFactory$OptionsChildCreationExtender"/>
+      <extender
+            uri="http://sdq.ipd.kit.edu/QML/dimensiontypes/1.0"
+            class="edu.kit.ipd.sdq.toometa.patterns.patternoptions.provider.PatternoptionsItemProviderAdapterFactory$DimensiontypesChildCreationExtender"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
+      <!-- @generated patterns -->
+      <factory
+            uri="http://sdq.ipd.uka.de/edu.kit.ipd.sdq.toometa/patterns/questions/1.0"
+            class="edu.kit.ipd.sdq.toometa.patterns.questions.provider.QuestionsItemProviderAdapterFactory"
+            supportedTypes=
+              "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
+               org.eclipse.emf.edit.provider.IStructuredItemContentProvider
+               org.eclipse.emf.edit.provider.ITreeItemContentProvider
+               org.eclipse.emf.edit.provider.IItemLabelProvider
+               org.eclipse.emf.edit.provider.IItemPropertySource"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
+      <!-- @generated patterns -->
+      <factory
+            uri="http:///edu.kit.ipd.sdq.toometa.de/patterns/patterninstances/0.6"
+            class="edu.kit.ipd.sdq.toometa.patterns.patterninstances.provider.PatterninstancesItemProviderAdapterFactory"
+            supportedTypes=
+              "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
+               org.eclipse.emf.edit.provider.IStructuredItemContentProvider
+               org.eclipse.emf.edit.provider.ITreeItemContentProvider
+               org.eclipse.emf.edit.provider.IItemLabelProvider
+               org.eclipse.emf.edit.provider.IItemPropertySource"/>
+   </extension>
+
+</plugin>

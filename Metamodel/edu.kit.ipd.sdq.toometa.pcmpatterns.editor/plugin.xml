@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated pcmpatterns -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="edu.kit.ipd.sdq.toometa.pcmpatterns.presentation.PcmpatternsModelWizardID"
+            name="%_UI_PcmpatternsModelWizard_label"
+            class="edu.kit.ipd.sdq.toometa.pcmpatterns.presentation.PcmpatternsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/PcmpatternsModelFile.gif">
+         <description>%_UI_PcmpatternsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated pcmpatterns -->
+      <editor
+            id="edu.kit.ipd.sdq.toometa.pcmpatterns.presentation.PcmpatternsEditorID"
+            name="%_UI_PcmpatternsEditor_label"
+            icon="icons/full/obj16/PcmpatternsModelFile.gif"
+            extensions="pcmpatterns"
+            class="edu.kit.ipd.sdq.toometa.pcmpatterns.presentation.PcmpatternsEditor"
+            contributorClass="edu.kit.ipd.sdq.toometa.pcmpatterns.presentation.PcmpatternsActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated patterns -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="edu.kit.ipd.sdq.toometa.patterns.presentation.PatternsModelWizardID"
+            name="%_UI_PatternsModelWizard_label"
+            class="edu.kit.ipd.sdq.toometa.patterns.presentation.PatternsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/PatternsModelFile.gif">
+         <description>%_UI_PatternsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated patterns -->
+      <editor
+            id="edu.kit.ipd.sdq.toometa.patterns.presentation.PatternsEditorID"
+            name="%_UI_PatternsEditor_label"
+            icon="icons/full/obj16/PatternsModelFile.gif"
+            extensions="patterns"
+            class="edu.kit.ipd.sdq.toometa.patterns.presentation.PatternsEditor"
+            contributorClass="edu.kit.ipd.sdq.toometa.patterns.presentation.PatternsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated patterns -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="edu.kit.ipd.sdq.toometa.patterns.patternoptions.presentation.PatternoptionsModelWizardID"
+            name="%_UI_PatternoptionsModelWizard_label"
+            class="edu.kit.ipd.sdq.toometa.patterns.patternoptions.presentation.PatternoptionsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/PatternoptionsModelFile.gif">
+         <description>%_UI_PatternoptionsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated patterns -->
+      <editor
+            id="edu.kit.ipd.sdq.toometa.patterns.patternoptions.presentation.PatternoptionsEditorID"
+            name="%_UI_PatternoptionsEditor_label"
+            icon="icons/full/obj16/PatternoptionsModelFile.gif"
+            extensions="patternoptions"
+            class="edu.kit.ipd.sdq.toometa.patterns.patternoptions.presentation.PatternoptionsEditor"
+            contributorClass="edu.kit.ipd.sdq.toometa.patterns.patternoptions.presentation.PatternoptionsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated patterns -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="edu.kit.ipd.sdq.toometa.patterns.questions.presentation.QuestionsModelWizardID"
+            name="%_UI_QuestionsModelWizard_label"
+            class="edu.kit.ipd.sdq.toometa.patterns.questions.presentation.QuestionsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/QuestionsModelFile.gif">
+         <description>%_UI_QuestionsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated patterns -->
+      <editor
+            id="edu.kit.ipd.sdq.toometa.patterns.questions.presentation.QuestionsEditorID"
+            name="%_UI_QuestionsEditor_label"
+            icon="icons/full/obj16/QuestionsModelFile.gif"
+            extensions="questions"
+            class="edu.kit.ipd.sdq.toometa.patterns.questions.presentation.QuestionsEditor"
+            contributorClass="edu.kit.ipd.sdq.toometa.patterns.questions.presentation.QuestionsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated patterns -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="edu.kit.ipd.sdq.toometa.patterns.patterninstances.presentation.PatterninstancesModelWizardID"
+            name="%_UI_PatterninstancesModelWizard_label"
+            class="edu.kit.ipd.sdq.toometa.patterns.patterninstances.presentation.PatterninstancesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/PatterninstancesModelFile.gif">
+         <description>%_UI_PatterninstancesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated patterns -->
+      <editor
+            id="edu.kit.ipd.sdq.toometa.patterns.patterninstances.presentation.PatterninstancesEditorID"
+            name="%_UI_PatterninstancesEditor_label"
+            icon="icons/full/obj16/PatterninstancesModelFile.gif"
+            extensions="patterninstances"
+            class="edu.kit.ipd.sdq.toometa.patterns.patterninstances.presentation.PatterninstancesEditor"
+            contributorClass="edu.kit.ipd.sdq.toometa.patterns.patterninstances.presentation.PatterninstancesActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

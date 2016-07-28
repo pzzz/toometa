@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated peropteryxcandidates -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="edu.kit.ipd.sdq.toometa.peropteryxcandidates.presentation.PeropteryxcandidatesModelWizardID"
+            name="%_UI_PeropteryxcandidatesModelWizard_label"
+            class="edu.kit.ipd.sdq.toometa.peropteryxcandidates.presentation.PeropteryxcandidatesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/PeropteryxcandidatesModelFile.gif">
+         <description>%_UI_PeropteryxcandidatesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated peropteryxcandidates -->
+      <editor
+            id="edu.kit.ipd.sdq.toometa.peropteryxcandidates.presentation.PeropteryxcandidatesEditorID"
+            name="%_UI_PeropteryxcandidatesEditor_label"
+            icon="icons/full/obj16/PeropteryxcandidatesModelFile.gif"
+            extensions="peropteryxcandidates"
+            class="edu.kit.ipd.sdq.toometa.peropteryxcandidates.presentation.PeropteryxcandidatesEditor"
+            contributorClass="edu.kit.ipd.sdq.toometa.peropteryxcandidates.presentation.PeropteryxcandidatesActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

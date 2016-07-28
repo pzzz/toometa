@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_5bj4gKWwEeWbLNb4dcB4vg" selectedViews="_5j5VIKWwEeWbLNb4dcB4vg" version="10.1.0.201509162000">
+  <semanticResources>palladiorationales.ecore</semanticResources>
+  <semanticResources>palladiorationales.genmodel</semanticResources>
+  <semanticResources>platform:/resource/toometa.decisions/model/decisions.ecore</semanticResources>
+  <semanticResources>platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore</semanticResources>
+  <semanticResources>platform:/resource/toometa.relations/model/relations.ecore</semanticResources>
+  <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
+  <semanticResources>platform:/resource/org.eclipse.emf.ecore/model/Ecore.ecore</semanticResources>
+  <semanticResources>platform:/resource/toometa.effects/model/effects.ecore</semanticResources>
+  <semanticResources>platform:/resource/toometa.glossary/model/glossary.ecore</semanticResources>
+  <semanticResources>http://www.eclipse.org/emf/2003/XMLType</semanticResources>
+  <semanticResources>platform:/resource/toometa.qualities/model/qualities.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.dimensions/model/dimensions.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.namedelement/model/namedelement.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.dimensiontypes/model/dimensiontypes.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.units/model/units.ecore</semanticResources>
+  <semanticResources>platform:/plugin/org.palladiosimulator.edp2/model/EDP2.ecore</semanticResources>
+  <semanticResources>platform:/plugin/org.palladiosimulator.metricspec/model/metricspec.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.identifier/model/identifier.genmodel</semanticResources>
+  <semanticResources>platform:/resource/toometa.decisions/model/decisions.genmodel</semanticResources>
+  <semanticResources>platform:/resource/org.eclipse.emf.ecore/model/Ecore.genmodel</semanticResources>
+  <semanticResources>platform:/resource/toometa.effects/model/effects.genmodel</semanticResources>
+  <semanticResources>platform:/resource/toometa.glossary/model/glossary.genmodel</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.namedelement/model/namedelement.genmodel</semanticResources>
+  <semanticResources>platform:/resource/toometa.qualities/model/qualities.genmodel</semanticResources>
+  <semanticResources>platform:/resource/toometa.relations/model/relations.genmodel</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.dimensions/model/dimensions.genmodel</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.dimensiontypes/model/dimensiontypes.genmodel</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.units/model/units.genmodel</semanticResources>
+  <semanticResources>platform:/resource/org.palladiosimulator.edp2/model/EDP2.genmodel</semanticResources>
+  <semanticResources>platform:/plugin/org.palladiosimulator.metricspec/model/metricspec.genmodel</semanticResources>
+  <semanticResources>platform:/resource/toometa.options/model/options.ecore</semanticResources>
+  <semanticResources>platform:/resource/toometa.options/model/options.genmodel</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.options/model/options.ecore</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.relations/model/relations.ecore</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.effects/model/effects.ecore</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.glossary/model/glossary.ecore</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.qualities/model/qualities.ecore</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.relations/model/relations.genmodel</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.qualities/model/qualities.genmodel</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.glossary/model/glossary.genmodel</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.effects/model/effects.genmodel</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.options/model/options.genmodel</semanticResources>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_5j5VIKWwEeWbLNb4dcB4vg">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_5k8eAKWwEeWbLNb4dcB4vg" name="palladiorationales">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_5k8eAaWwEeWbLNb4dcB4vg" source="DANNOTATION_CUSTOMIZATION_KEY">
+        <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_5k8eAqWwEeWbLNb4dcB4vg"/>
+      </ownedAnnotationEntries>
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_5lCkoKWwEeWbLNb4dcB4vg" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_5lCkoaWwEeWbLNb4dcB4vg" type="Sirius" element="_5k8eAKWwEeWbLNb4dcB4vg" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_Dw1DMKWxEeWbLNb4dcB4vg" type="2002" element="_DwsgUKWxEeWbLNb4dcB4vg">
+            <children xmi:type="notation:Node" xmi:id="_Dw1qQKWxEeWbLNb4dcB4vg" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_Dw2RUKWxEeWbLNb4dcB4vg" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_J_EHEKWxEeWbLNb4dcB4vg" type="3009" element="_J-vW8KWxEeWbLNb4dcB4vg">
+                <children xmi:type="notation:Node" xmi:id="_J_EuIKWxEeWbLNb4dcB4vg" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_J_FVMKWxEeWbLNb4dcB4vg" type="7003">
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_J_FVMaWxEeWbLNb4dcB4vg"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_J_FVMqWxEeWbLNb4dcB4vg"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_J_EHEaWxEeWbLNb4dcB4vg" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J_EHEqWxEeWbLNb4dcB4vg" x="330" y="4" width="120" height="100"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_roetsKWxEeWbLNb4dcB4vg" type="Note" fontName="Segoe UI" description="inherits options.AnalysisRationale&#xD;&#xA;references 0..1 EDP2.EcperimentData.ExperimentSetting" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_rof70KWxEeWbLNb4dcB4vg" type="DiagramName">
+                  <element xsi:nil="true"/>
+                </children>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_rogi4KWxEeWbLNb4dcB4vg" type="Description">
+                  <element xsi:nil="true"/>
+                </children>
+                <styles xmi:type="notation:TextStyle" xmi:id="_roetsaWxEeWbLNb4dcB4vg"/>
+                <styles xmi:type="notation:LineTypeStyle" xmi:id="_roetsqWxEeWbLNb4dcB4vg"/>
+                <element xsi:nil="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_roets6WxEeWbLNb4dcB4vg" y="29" width="316" height="54"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_Dw2RUaWxEeWbLNb4dcB4vg"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_Dw2RUqWxEeWbLNb4dcB4vg"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Dw1DMaWxEeWbLNb4dcB4vg" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dw1DMqWxEeWbLNb4dcB4vg" x="50" y="30" width="463" height="118"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_8w9dwMeAEeW4c7PqV_v7Zw" type="2001" element="_8w2wEMeAEeW4c7PqV_v7Zw">
+            <children xmi:type="notation:Node" xmi:id="_8w_S8MeAEeW4c7PqV_v7Zw" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_8w_S8ceAEeW4c7PqV_v7Zw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_8xbX0MeAEeW4c7PqV_v7Zw" type="3005" element="_8w3XIMeAEeW4c7PqV_v7Zw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_8xbX0ceAEeW4c7PqV_v7Zw" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8xbX0seAEeW4c7PqV_v7Zw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_8w9dwceAEeW4c7PqV_v7Zw" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8w9dwseAEeW4c7PqV_v7Zw" x="405" y="-85" width="640" height="85"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_5lCkoqWwEeWbLNb4dcB4vg"/>
+          <edges xmi:type="notation:Connector" xmi:id="_usaYwKWxEeWbLNb4dcB4vg" type="NoteAttachment" source="_roetsKWxEeWbLNb4dcB4vg" target="_J_EHEKWxEeWbLNb4dcB4vg" lineWidth="1">
+            <styles xmi:type="notation:ArrowStyle" xmi:id="_usaYwaWxEeWbLNb4dcB4vg"/>
+            <styles xmi:type="notation:LineTypeStyle" xmi:id="_usaYwqWxEeWbLNb4dcB4vg"/>
+            <element xsi:nil="true"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_usaYw6WxEeWbLNb4dcB4vg" points="[157, 20, -129, -17]$[172, 22, -114, -15]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_usfRQKWxEeWbLNb4dcB4vg" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kl5GcLuDEeWqRtpbcQZ_6A" id="(0.9666666666666667,0.64)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_DwsgUKWxEeWbLNb4dcB4vg" name="palladiorationales" width="24" height="16">
+        <target xmi:type="ecore:EPackage" href="palladiorationales.ecore#/"/>
+        <semanticElements xmi:type="ecore:EPackage" href="palladiorationales.ecore#/"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_DwtHYKWxEeWbLNb4dcB4vg" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="125,125,125" backgroundStyle="Liquid" foregroundColor="217,210,220">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']/@containerMappings[name='Dropped%20Package']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']/@containerMappings[name='Dropped%20Package']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_J-vW8KWxEeWbLNb4dcB4vg" name="PalladioRationale" tooltipText="" width="12" height="10">
+          <target xmi:type="ecore:EClass" href="palladiorationales.ecore#//PalladioRationale"/>
+          <semanticElements xmi:type="ecore:EClass" href="palladiorationales.ecore#//PalladioRationale"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_J-v-AKWxEeWbLNb4dcB4vg" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="255,252,216">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_8w2wEMeAEeW4c7PqV_v7Zw" width="-1" height="-1">
+        <target xmi:type="ecore:EPackage" href="palladiorationales.ecore#/"/>
+        <semanticElements xmi:type="ecore:EPackage" href="palladiorationales.ecore#/"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_8w3XIMeAEeW4c7PqV_v7Zw" showIcon="false" labelPosition="node" workspacePath="/org.eclipse.emf.ecoretools.design/icons/full/back/empty.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@nodeMappings[name='Empty%20Diagram']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@nodeMappings[name='Empty%20Diagram']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_5k8eBaWwEeWbLNb4dcB4vg"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer"/>
+      <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']"/>
+      <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Validation']"/>
+      <target xmi:type="ecore:EPackage" href="palladiorationales.ecore#/"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>

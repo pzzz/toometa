@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Toometa Traceview
+Bundle-SymbolicName: edu.kit.ipd.sdq.toometa.traceview;singleton:=true
+Bundle-Version: 0.0.1
+Bundle-Activator: edu.kit.ipd.sdq.toometa.traceview.Activator
+Bundle-Vendor: toometa.de
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.expressions,
+ edu.kit.ipd.sdq.toometa.relations;bundle-version="0.1.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Import-Package: org.eclipse.emf.ecore.provider,
+ org.eclipse.emf.edit.provider,
+ org.eclipse.emf.edit.ui.provider

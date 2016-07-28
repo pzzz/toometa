@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/edu.kit.ipd.sdq.toometa.patterns/src" modelPluginID="edu.kit.ipd.sdq.toometa.patterns"
+    modelName="Patterns" rootExtendsInterface="org.eclipse.emf.cdo.CDOObject" rootExtendsClass="org.eclipse.emf.internal.cdo.CDOObjectImpl"
+    reflectiveDelegation="true" importerID="org.eclipse.emf.importer.ecore" featureDelegation="Reflective"
+    complianceLevel="8.0" copyrightFields="false" editPluginID="edu.kit.ipd.sdq.toometa.patterns.edit"
+    editorPluginID="edu.kit.ipd.sdq.toometa.patterns.editor" usedGenPackages="../../edu.kit.ipd.sdq.toometa.options/model/options.genmodel#//options ../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../edu.kit.ipd.sdq.toometa.effects/model/effects.genmodel#//effects ../../edu.kit.ipd.sdq.toometa.glossary/model/glossary.genmodel#//glossary platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.genmodel#//identifier ../../de.uka.ipd.sdq.namedelement/model/namedelement.genmodel#//namedelement ../../edu.kit.ipd.sdq.toometa.qualities/model/qualities.genmodel#//qualities ../../edu.kit.ipd.sdq.toometa.relations/model/relations.genmodel#//relations ../../de.uka.ipd.sdq.dsexplore.qml.dimensions/model/dimensions.genmodel#//dimensions ../../de.uka.ipd.sdq.dsexplore.qml.dimensiontypes/model/dimensiontypes.genmodel#//dimensiontypes ../../de.uka.ipd.sdq.dsexplore.qml.units/model/units.genmodel#//units"
+    importOrganizing="true">
+  <foreignModel>patterns.ecore</foreignModel>
+  <modelPluginVariables>CDO=org.eclipse.emf.cdo</modelPluginVariables>
+  <genPackages prefix="Patterns" basePackage="edu.kit.ipd.sdq.toometa" disposableProviderFactory="true"
+      ecorePackage="patterns.ecore#/">
+    <genClasses ecoreClass="patterns.ecore#//Category" labelFeature="#//patterns/Category/description">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//Category/description"/>
+    </genClasses>
+    <genClasses ecoreClass="patterns.ecore#//Role" labelFeature="#//patterns/Role/desctiption">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//Role/desctiption"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//Role/maxInstances"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="patterns.ecore#//CoUsage">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference patterns.ecore#//CoUsage/usedWith"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="patterns.ecore#//PatternRelations">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//PatternRelations/description"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="patterns.ecore#//GeneralPatternDescription">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference patterns.ecore#//GeneralPatternDescription/property"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//GeneralPatternDescription/InformationSource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//GeneralPatternDescription/ShortDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//GeneralPatternDescription/diagram"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//GeneralPatternDescription/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="patterns.ecore#//Exclusion">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference patterns.ecore#//Exclusion/excludes"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="patterns.ecore#//Alternative">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference patterns.ecore#//Alternative/alternativeFor"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="patterns.ecore#//Similar">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference patterns.ecore#//Similar/similarTo"/>
+    </genClasses>
+    <genClasses ecoreClass="patterns.ecore#//PatternVariant">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference patterns.ecore#//PatternVariant/basePattern"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="patterns.ecore#//ArchitecturalStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference patterns.ecore#//ArchitecturalStructure/role"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference patterns.ecore#//ArchitecturalStructure/connectors"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="patterns.ecore#//QuestionAnnotations"/>
+    <genClasses ecoreClass="patterns.ecore#//Pattern">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference patterns.ecore#//Pattern/repository"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference patterns.ecore#//Pattern/categories"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference patterns.ecore#//Pattern/domain"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference patterns.ecore#//Pattern/hasVariants"/>
+    </genClasses>
+    <genClasses ecoreClass="patterns.ecore#//DomainType"/>
+    <genClasses image="false" ecoreClass="patterns.ecore#//Property">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference patterns.ecore#//Property/terms"/>
+    </genClasses>
+    <genClasses ecoreClass="patterns.ecore#//QualityInfluence" labelFeature="../../edu.kit.ipd.sdq.toometa.effects/model/effects.genmodel#//effects/Effect/description"/>
+    <genClasses ecoreClass="patterns.ecore#//PatternCatalogue">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference patterns.ecore#//PatternCatalogue/patterns"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference patterns.ecore#//PatternCatalogue/domains"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference patterns.ecore#//PatternCatalogue/categories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference patterns.ecore#//PatternCatalogue/infrastructuretype"/>
+    </genClasses>
+    <genClasses ecoreClass="patterns.ecore#//InfrastructureType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//InfrastructureType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//InfrastructureType/description"/>
+    </genClasses>
+    <genClasses ecoreClass="patterns.ecore#//Connector" labelFeature="#//patterns/Connector/description">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference patterns.ecore#//Connector/connectorTo"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference patterns.ecore#//Connector/connectorFrom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//Connector/description"/>
+    </genClasses>
+    <genClasses ecoreClass="patterns.ecore#//Drawback" labelFeature="#//patterns/Drawback/Drawback">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//Drawback/Drawback"/>
+    </genClasses>
+    <genClasses ecoreClass="patterns.ecore#//Keyword" labelFeature="#//patterns/Keyword/keyword">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//Keyword/keyword"/>
+    </genClasses>
+    <genClasses ecoreClass="patterns.ecore#//Goal" labelFeature="#//patterns/Goal/description">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//Goal/description"/>
+    </genClasses>
+    <nestedGenPackages prefix="Patternoptions" basePackage="edu.kit.ipd.sdq.toometa.patterns"
+        disposableProviderFactory="true" childCreationExtenders="true" ecorePackage="patterns.ecore#//patternoptions">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="patterns.ecore#//patternoptions/ADMAnswerTypeEnum">
+        <genEnumLiterals ecoreEnumLiteral="patterns.ecore#//patternoptions/ADMAnswerTypeEnum/noAnswer"/>
+        <genEnumLiterals ecoreEnumLiteral="patterns.ecore#//patternoptions/ADMAnswerTypeEnum/yes"/>
+        <genEnumLiterals ecoreEnumLiteral="patterns.ecore#//patternoptions/ADMAnswerTypeEnum/no"/>
+        <genEnumLiterals ecoreEnumLiteral="patterns.ecore#//patternoptions/ADMAnswerTypeEnum/doNotKnow"/>
+      </genEnums>
+      <genClasses ecoreClass="patterns.ecore#//patternoptions/PatternRationale" labelFeature="../../edu.kit.ipd.sdq.toometa.options/model/options.genmodel#//options/Rationale/rationaleText">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference patterns.ecore#//patternoptions/PatternRationale/answers"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="patterns.ecore#//patternoptions/Answer"
+          labelFeature="#//patterns/patternoptions/Answer/answerText">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//patternoptions/Answer/answerText"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference patterns.ecore#//patternoptions/Answer/toQuestion"/>
+      </genClasses>
+      <genClasses ecoreClass="patterns.ecore#//patternoptions/PatternOption" labelFeature="../../edu.kit.ipd.sdq.toometa.options/model/options.genmodel#//options/Option/description">
+        <genFeatures property="None" children="true" createChild="true" propertySortChoices="true"
+            ecoreFeature="ecore:EReference patterns.ecore#//patternoptions/PatternOption/patternrationale"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Questions" basePackage="edu.kit.ipd.sdq.toometa.patterns"
+        disposableProviderFactory="true" ecorePackage="patterns.ecore#//questions">
+      <genClasses ecoreClass="patterns.ecore#//questions/QuestionRepository">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference patterns.ecore#//questions/QuestionRepository/questions"/>
+      </genClasses>
+      <genClasses ecoreClass="patterns.ecore#//questions/GoalQuestion" labelFeature="#//patterns/questions/Question/text"/>
+      <genClasses ecoreClass="patterns.ecore#//questions/VariantQuestion" labelFeature="#//patterns/questions/Question/text"/>
+      <genClasses ecoreClass="patterns.ecore#//questions/ConsequenceQuestion" labelFeature="#//patterns/questions/Question/text"/>
+      <genClasses ecoreClass="patterns.ecore#//questions/IntentQuestion" labelFeature="#//patterns/questions/Question/text"/>
+      <genClasses image="false" ecoreClass="patterns.ecore#//questions/Question" labelFeature="#//patterns/questions/Question/text">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//questions/Question/text"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference patterns.ecore#//questions/Question/questionRepository"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference patterns.ecore#//questions/Question/hasQualityEffect"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference patterns.ecore#//questions/Question/terms"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Patterninstances" basePackage="edu.kit.ipd.sdq.toometa.patterns"
+        disposableProviderFactory="true" ecorePackage="patterns.ecore#//patterninstances">
+      <genClasses ecoreClass="patterns.ecore#//patterninstances/PatternInstance">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference patterns.ecore#//patterninstances/PatternInstance/roles"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference patterns.ecore#//patterninstances/PatternInstance/connectors"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//patterninstances/PatternInstance/name"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute patterns.ecore#//patterninstances/PatternInstance/architecturalLevel"/>
+        <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference patterns.ecore#//patterninstances/PatternInstance/repository"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="patterns.ecore#//patterninstances/ConnectorInstance">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference patterns.ecore#//patterninstances/ConnectorInstance/connector"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference patterns.ecore#//patterninstances/ConnectorInstance/fromRole"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference patterns.ecore#//patterninstances/ConnectorInstance/toRole"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="patterns.ecore#//patterninstances/RoleInstance">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference patterns.ecore#//patterninstances/RoleInstance/role"/>
+      </genClasses>
+      <genClasses ecoreClass="patterns.ecore#//patterninstances/PatternInstanceRepository">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference patterns.ecore#//patterninstances/PatternInstanceRepository/solutionInstances"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

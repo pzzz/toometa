@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated issues -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="edu.kit.ipd.sdq.toometa.issues.presentation.IssuesModelWizardID"
+            name="%_UI_IssuesModelWizard_label"
+            class="edu.kit.ipd.sdq.toometa.issues.presentation.IssuesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/IssuesModelFile.gif">
+         <description>%_UI_IssuesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated issues -->
+      <editor
+            id="edu.kit.ipd.sdq.toometa.issues.presentation.IssuesEditorID"
+            name="%_UI_IssuesEditor_label"
+            icon="icons/full/obj16/IssuesModelFile.gif"
+            extensions="issues"
+            class="edu.kit.ipd.sdq.toometa.issues.presentation.IssuesEditor"
+            contributorClass="edu.kit.ipd.sdq.toometa.issues.presentation.IssuesActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
+      <!-- @generated jiraissues -->
+      <factory
+            uri="http://sdq.ipd.kit.edu/toometa/jiraissues/1.0"
+            class="edu.kit.ipd.sdq.toometa.jiraissues.provider.JiraissuesItemProviderAdapterFactory"
+            supportedTypes=
+              "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
+               org.eclipse.emf.edit.provider.IStructuredItemContentProvider
+               org.eclipse.emf.edit.provider.ITreeItemContentProvider
+               org.eclipse.emf.edit.provider.IItemLabelProvider
+               org.eclipse.emf.edit.provider.IItemPropertySource"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.childCreationExtenders">
+      <!-- @generated jiraissues -->
+      <extender
+            uri="http://sdq.ipd.kit.edu/toometa/issues/1.0"
+            class="edu.kit.ipd.sdq.toometa.jiraissues.provider.JiraissuesItemProviderAdapterFactory$IssuesChildCreationExtender"/>
+   </extension>
+
+</plugin>

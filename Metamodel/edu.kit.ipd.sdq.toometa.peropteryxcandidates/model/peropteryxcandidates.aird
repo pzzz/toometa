@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_85JfQMgWEeWrBeYideiPFQ" selectedViews="_8-TFAMgWEeWrBeYideiPFQ" version="10.1.0.201509162000">
+  <semanticResources>peropteryxcandidates.ecore</semanticResources>
+  <semanticResources>peropteryxcandidates.genmodel</semanticResources>
+  <semanticResources>platform:/resource/toometa.archoptions/model/archoptions.ecore</semanticResources>
+  <semanticResources>platform:/resource/toometa.options/model/options.ecore</semanticResources>
+  <semanticResources>platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore</semanticResources>
+  <semanticResources>platform:/resource/toometa.relations/model/relations.ecore</semanticResources>
+  <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
+  <semanticResources>platform:/resource/org.eclipse.emf.ecore/model/Ecore.ecore</semanticResources>
+  <semanticResources>platform:/resource/toometa.effects/model/effects.ecore</semanticResources>
+  <semanticResources>platform:/resource/toometa.glossary/model/glossary.ecore</semanticResources>
+  <semanticResources>http://www.eclipse.org/emf/2003/XMLType</semanticResources>
+  <semanticResources>platform:/resource/toometa.qualities/model/qualities.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.dimensions/model/dimensions.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.namedelement/model/namedelement.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.dimensiontypes/model/dimensiontypes.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.units/model/units.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.pcm.nqr/model/nqr.ecore</semanticResources>
+  <semanticResources>platform:/plugin/org.palladiosimulator.pcm/model/pcm.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml/model/QMLContract.ecore</semanticResources>
+  <semanticResources>platform:/plugin/de.uka.ipd.sdq.stoex/model/stoex.ecore</semanticResources>
+  <semanticResources>platform:/plugin/de.uka.ipd.sdq.units/model/Units.ecore</semanticResources>
+  <semanticResources>platform:/plugin/de.uka.ipd.sdq.probfunction/model/ProbabilityFunction.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml/model/QMLContractType.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml/model/QMLDeclarations.ecore</semanticResources>
+  <semanticResources>platform:/resource/toometa.archoptions/model/archoptions.genmodel</semanticResources>
+  <semanticResources>platform:/resource/toometa.options/model/options.genmodel</semanticResources>
+  <semanticResources>platform:/resource/org.eclipse.emf.ecore/model/Ecore.genmodel</semanticResources>
+  <semanticResources>platform:/resource/toometa.effects/model/effects.genmodel</semanticResources>
+  <semanticResources>platform:/resource/toometa.glossary/model/glossary.genmodel</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.identifier/model/identifier.genmodel</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.namedelement/model/namedelement.genmodel</semanticResources>
+  <semanticResources>platform:/resource/toometa.qualities/model/qualities.genmodel</semanticResources>
+  <semanticResources>platform:/resource/toometa.relations/model/relations.genmodel</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.dimensions/model/dimensions.genmodel</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.dimensiontypes/model/dimensiontypes.genmodel</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.units/model/units.genmodel</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.pcm.nqr/model/nqr.genmodel</semanticResources>
+  <semanticResources>platform:/resource/org.palladiosimulator.pcm/model/pcm.genmodel</semanticResources>
+  <semanticResources>platform:/plugin/de.uka.ipd.sdq.probfunction/model/ProbabilityFunction.genmodel</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml/model/QMLProfile.genmodel</semanticResources>
+  <semanticResources>platform:/plugin/de.uka.ipd.sdq.stoex/model/stoex.genmodel</semanticResources>
+  <semanticResources>platform:/plugin/de.uka.ipd.sdq.units/model/Units.genmodel</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml/model/QMLProfile.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.contract/model/QMLContract.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.contracttype/model/QMLContractType.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.declarations/model/QMLDeclarations.ecore</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.contract/model/QMLContract.genmodel</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.contracttype/model/QMLContractType.genmodel</semanticResources>
+  <semanticResources>platform:/resource/de.uka.ipd.sdq.dsexplore.qml.declarations/model/QMLDeclarations.genmodel</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.archoptions/model/archoptions.ecore</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.options/model/options.ecore</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.relations/model/relations.ecore</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.effects/model/effects.ecore</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.glossary/model/glossary.ecore</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.qualities/model/qualities.ecore</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.relations/model/relations.genmodel</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.qualities/model/qualities.genmodel</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.options/model/options.genmodel</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.effects/model/effects.genmodel</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.glossary/model/glossary.genmodel</semanticResources>
+  <semanticResources>platform:/resource/edu.kit.ipd.sdq.toometa.archoptions/model/archoptions.genmodel</semanticResources>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_8-TFAMgWEeWrBeYideiPFQ">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_9C1mwMgWEeWrBeYideiPFQ" name="peropteryxcandidates">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_9C1mwcgWEeWrBeYideiPFQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+        <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_9C1mwsgWEeWrBeYideiPFQ">
+          <computedStyleDescriptions xmi:type="style:BundledImageDescription" xmi:id="_n19_ANZ9EeW4IuBpJVTXqw" labelExpression="service:render" labelAlignment="LEFT" tooltipExpression="service:renderTooltip" sizeComputationExpression="1">
+            <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </computedStyleDescriptions>
+          <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_isMMUNZ-EeW4IuBpJVTXqw" sourceArrow="FillDiamond" routingStyle="manhattan">
+            <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription xmi:type="style:CenterLabelStyleDescription" xmi:id="_isMMUdZ-EeW4IuBpJVTXqw" showIcon="false" labelExpression="service:render">
+              <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+            <endLabelStyleDescription xmi:type="style:EndLabelStyleDescription" xmi:id="_isMMUtZ-EeW4IuBpJVTXqw" labelSize="6" showIcon="false" labelExpression="service:eKeysLabel">
+              <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            </endLabelStyleDescription>
+          </computedStyleDescriptions>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_9DvlsMgWEeWrBeYideiPFQ" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_9DvlscgWEeWrBeYideiPFQ" type="Sirius" element="_9C1mwMgWEeWrBeYideiPFQ" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_A-OeQMgXEeWrBeYideiPFQ" type="2002" element="_A95uIMgXEeWrBeYideiPFQ">
+            <children xmi:type="notation:Node" xmi:id="_A-PsYMgXEeWrBeYideiPFQ" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_A-Q6gMgXEeWrBeYideiPFQ" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_CkFo0MgXEeWrBeYideiPFQ" type="3009" element="_CNcqcMgXEeWrBeYideiPFQ">
+                <children xmi:type="notation:Node" xmi:id="_CkG28MgXEeWrBeYideiPFQ" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_CkIFEMgXEeWrBeYideiPFQ" type="7003">
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_CkIFEcgXEeWrBeYideiPFQ"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_CkIFEsgXEeWrBeYideiPFQ"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_CkFo0cgXEeWrBeYideiPFQ" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CkFo0sgXEeWrBeYideiPFQ" x="5" y="29"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_n2HI8NZ9EeW4IuBpJVTXqw" type="3009" element="_n1yY0NZ9EeW4IuBpJVTXqw">
+                <children xmi:type="notation:Node" xmi:id="_n2IXENZ9EeW4IuBpJVTXqw" type="5004"/>
+                <children xmi:type="notation:Node" xmi:id="_n2JlMNZ9EeW4IuBpJVTXqw" type="7003">
+                  <children xmi:type="notation:Node" xmi:id="_n2LaYNZ9EeW4IuBpJVTXqw" type="3010" element="_n19X8NZ9EeW4IuBpJVTXqw">
+                    <styles xmi:type="notation:FontStyle" xmi:id="_n2LaYdZ9EeW4IuBpJVTXqw" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_n2LaYtZ9EeW4IuBpJVTXqw"/>
+                  </children>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_n2JlMdZ9EeW4IuBpJVTXqw"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_n2JlMtZ9EeW4IuBpJVTXqw"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_n2HI8dZ9EeW4IuBpJVTXqw" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n2HI8tZ9EeW4IuBpJVTXqw" x="280" y="34"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_A-Q6gcgXEeWrBeYideiPFQ"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_A-Q6gsgXEeWrBeYideiPFQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_A-OeQcgXEeWrBeYideiPFQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A-OeQsgXEeWrBeYideiPFQ" x="105" y="170" width="463" height="153"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_9DvlssgWEeWrBeYideiPFQ"/>
+          <edges xmi:type="notation:Connector" xmi:id="_UHq0UMgXEeWrBeYideiPFQ" type="NoteAttachment" target="_CkFo0MgXEeWrBeYideiPFQ" lineWidth="1">
+            <styles xmi:type="notation:ArrowStyle" xmi:id="_UHq0UcgXEeWrBeYideiPFQ"/>
+            <styles xmi:type="notation:LineTypeStyle" xmi:id="_UHq0UsgXEeWrBeYideiPFQ"/>
+            <element xsi:nil="true"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UHq0U8gXEeWrBeYideiPFQ" points="[108, 44, -75, -19]$[118, 49, -65, -14]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UIR4UMgXEeWrBeYideiPFQ" id="(0.49767441860465117,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dx1noNZ9EeW4IuBpJVTXqw" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_n2PEwNZ9EeW4IuBpJVTXqw" type="4001" element="_n2AbQNZ9EeW4IuBpJVTXqw" source="_CkFo0MgXEeWrBeYideiPFQ" target="_n2HI8NZ9EeW4IuBpJVTXqw">
+            <children xmi:type="notation:Node" xmi:id="_n2SIENZ9EeW4IuBpJVTXqw" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n2SIEdZ9EeW4IuBpJVTXqw" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_n2SvINZ9EeW4IuBpJVTXqw" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n2SvIdZ9EeW4IuBpJVTXqw" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_n2TWMNZ9EeW4IuBpJVTXqw" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n2TWMdZ9EeW4IuBpJVTXqw" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_n2PEwdZ9EeW4IuBpJVTXqw" routing="Rectilinear"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_n2PEwtZ9EeW4IuBpJVTXqw" fontColor="7490599" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_n2PEw9Z9EeW4IuBpJVTXqw" points="[65, 11, -227, 6]$[210, 11, -82, 6]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n2YOsNZ9EeW4IuBpJVTXqw" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n2YOsdZ9EeW4IuBpJVTXqw" id="(0.5,0.5)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_A95uIMgXEeWrBeYideiPFQ" name="peropteryxcandidates" width="24" height="16">
+        <target xmi:type="ecore:EPackage" href="peropteryxcandidates.ecore#/"/>
+        <semanticElements xmi:type="ecore:EPackage" href="peropteryxcandidates.ecore#/"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_A98xcMgXEeWrBeYideiPFQ" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="125,125,125" backgroundStyle="Liquid" foregroundColor="217,210,220">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']/@containerMappings[name='Dropped%20Package']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']/@containerMappings[name='Dropped%20Package']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_CNcqcMgXEeWrBeYideiPFQ" name="PerOpteryxCandidate" tooltipText="" outgoingEdges="_n2AbQNZ9EeW4IuBpJVTXqw" width="12" height="10">
+          <target xmi:type="ecore:EClass" href="peropteryxcandidates.ecore#//PerOpteryxCandidate"/>
+          <semanticElements xmi:type="ecore:EClass" href="peropteryxcandidates.ecore#//PerOpteryxCandidate"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_CNg74MgXEeWrBeYideiPFQ" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="255,252,216">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_n1yY0NZ9EeW4IuBpJVTXqw" name="PredictedQualityValue" tooltipText="" incomingEdges="_n2AbQNZ9EeW4IuBpJVTXqw" width="12" height="10">
+          <target xmi:type="ecore:EClass" href="peropteryxcandidates.ecore#//PredictedQualityValue"/>
+          <semanticElements xmi:type="ecore:EClass" href="peropteryxcandidates.ecore#//PredictedQualityValue"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_n1zm8NZ9EeW4IuBpJVTXqw" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="255,252,216">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
+          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_n19X8NZ9EeW4IuBpJVTXqw" name="qualityValue : EDoubleObject" tooltipText="">
+            <target xmi:type="ecore:EAttribute" href="peropteryxcandidates.ecore#//PredictedQualityValue/qualityValue"/>
+            <semanticElements xmi:type="ecore:EAttribute" href="peropteryxcandidates.ecore#//PredictedQualityValue/qualityValue"/>
+            <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_n1-mENZ9EeW4IuBpJVTXqw" labelAlignment="LEFT" description="_n19_ANZ9EeW4IuBpJVTXqw">
+              <labelFormat>bold</labelFormat>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+          </ownedElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_n2AbQNZ9EeW4IuBpJVTXqw" name="[0..*] simulationQualities" sourceNode="_CNcqcMgXEeWrBeYideiPFQ" targetNode="_n1yY0NZ9EeW4IuBpJVTXqw">
+        <target xmi:type="ecore:EReference" href="peropteryxcandidates.ecore#//PerOpteryxCandidate/simulationQualities"/>
+        <semanticElements xmi:type="ecore:EReference" href="peropteryxcandidates.ecore#//PerOpteryxCandidate/simulationQualities"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_isOBgNZ-EeW4IuBpJVTXqw" description="_isMMUNZ-EeW4IuBpJVTXqw" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_isOBgdZ-EeW4IuBpJVTXqw" showIcon="false"/>
+          <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_isOBgtZ-EeW4IuBpJVTXqw" labelSize="6" showIcon="false" labelColor="39,76,114"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_9C1mxcgWEeWrBeYideiPFQ"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer"/>
+      <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']"/>
+      <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Validation']"/>
+      <target xmi:type="ecore:EPackage" href="peropteryxcandidates.ecore#/"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>
