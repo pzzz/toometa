@@ -34,22 +34,22 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="order" ordered="false"
         upperBound="-1" eType="#//Order" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DimensionType" abstract="true" eSuperTypes="../../de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
+  <eClassifiers xsi:type="ecore:EClass" name="DimensionType" abstract="true" eSuperTypes="platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A dimension type specifies the type of the elements in the dimension."/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="relationSemantics" ordered="false"
         eType="#//RelationSemantics" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RelationSemantics" eSuperTypes="../../de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
+  <eClassifiers xsi:type="ecore:EClass" name="RelationSemantics" eSuperTypes="platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The relation semantic of a domain is either increasing or decreasing.&#xD;&#xA;A&amp;nbsp;domain&amp;nbsp;is&amp;nbsp;increasing,&amp;nbsp;if&amp;nbsp;bigger&amp;nbsp;elements&amp;nbsp;are&amp;nbsp;better;&amp;nbsp;a&amp;nbsp;domain&amp;nbsp;is&amp;nbsp;decreasing,&amp;nbsp;if&amp;nbsp;smaller&amp;nbsp;elements&amp;nbsp;are&amp;nbsp;better."/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="relSem" ordered="false"
         lowerBound="1" eType="#//EnumRelationSemantics"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Element" eSuperTypes="../../de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier ../../de.uka.ipd.sdq.namedelement/model/namedelement.ecore#//NamedElement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Order" eSuperTypes="../../de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
+  <eClassifiers xsi:type="ecore:EClass" name="Element" eSuperTypes="platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier ../../de.uka.ipd.sdq.namedelement/model/namedelement.ecore#//NamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Order" eSuperTypes="platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Orders&amp;nbsp;two&amp;nbsp;elements&amp;nbsp;directly&amp;nbsp;by&amp;nbsp;specifying one&amp;nbsp;bigger&amp;nbsp;than&amp;nbsp;the&amp;nbsp;other."/>
     </eAnnotations>
@@ -137,7 +137,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="domain" ordered="false"
         lowerBound="1" eType="#//EnumNumericDomain"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NumericRange" eSuperTypes="../../de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
+  <eClassifiers xsi:type="ecore:EClass" name="NumericRange" eSuperTypes="platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
     <eOperations name="UPPERLIMIT_must_be_greater_than_LOWERLIMIT" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.upperLimit.oclAsType(Real) > self.lowerLimit.oclAsType(Real)"/>
@@ -169,7 +169,7 @@
     <eLiterals name="real"/>
     <eLiterals name="integer" value="1"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DimensionTypeRepository" eSuperTypes="../../de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
+  <eClassifiers xsi:type="ecore:EClass" name="DimensionTypeRepository" eSuperTypes="platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
     <eStructuralFeatures xsi:type="ecore:EReference" name="dimensionTypes" ordered="false"
         upperBound="-1" eType="#//DimensionType" containment="true"/>
   </eClassifiers>

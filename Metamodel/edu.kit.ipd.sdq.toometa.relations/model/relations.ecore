@@ -3,7 +3,7 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="relations" nsURI="http://sdq.ipd.kit.edu/toometa/relations/1.0"
     nsPrefix="relations">
   <eClassifiers xsi:type="ecore:EClass" name="TraceableObject" abstract="true" eSuperTypes="#//RelationObject #//ConflictObject #//DuplicationObject #//DependencyObject #//ParentalObject #//TriggerObject #//ResolveObject #//AlternativeObject #//CouldResolveObject #//StakeholderObject #//SelectionObject"/>
-  <eClassifiers xsi:type="ecore:EClass" name="RelationType" eSuperTypes="../../de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
+  <eClassifiers xsi:type="ecore:EClass" name="RelationType" eSuperTypes="platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DuplicationObject" abstract="true">
@@ -18,7 +18,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="subpartOf" upperBound="-1"
         eType="#//ParentalObject" eOpposite="#//ParentalObject/parentOf"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RelationObject" abstract="true" eSuperTypes="../../de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
+  <eClassifiers xsi:type="ecore:EClass" name="RelationObject" abstract="true" eSuperTypes="platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
     <eStructuralFeatures xsi:type="ecore:EReference" name="relations" upperBound="-1"
         eType="#//Relation" containment="true"/>
   </eClassifiers>
@@ -46,7 +46,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasAlternatives" upperBound="-1"
         eType="#//AlternativeObject" eOpposite="#//AlternativeObject/alternativeTo"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RelationsModel" eSuperTypes="../../de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
+  <eClassifiers xsi:type="ecore:EClass" name="RelationsModel" eSuperTypes="platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
     <eStructuralFeatures xsi:type="ecore:EReference" name="relationTypes" upperBound="-1"
         eType="#//RelationType" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="relations" upperBound="-1"
@@ -58,7 +58,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="resolvedBy" upperBound="-1"
         eType="#//ResolveObject" eOpposite="#//ResolveObject/resolves"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Relation" eSuperTypes="../../de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
+  <eClassifiers xsi:type="ecore:EClass" name="Relation" eSuperTypes="platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
     <eStructuralFeatures xsi:type="ecore:EReference" name="type" lowerBound="1" eType="#//RelationType"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="opposite" eType="#//Relation"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="from" eType="#//RelationObject"/>

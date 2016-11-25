@@ -22,7 +22,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Changeability" eSuperTypes="#//Maintainability"/>
   <eClassifiers xsi:type="ecore:EClass" name="Interoperability" eSuperTypes="#//Functionality"/>
   <eClassifiers xsi:type="ecore:EClass" name="FaultTolerance" eSuperTypes="#//Reliability"/>
-  <eClassifiers xsi:type="ecore:EClass" name="QualityTypeRepository" eSuperTypes="../../de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
+  <eClassifiers xsi:type="ecore:EClass" name="QualityTypeRepository" eSuperTypes="platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
     <eStructuralFeatures xsi:type="ecore:EReference" name="qualityType" upperBound="-1"
         eType="#//QualityType" containment="true" eOpposite="#//QualityType/qualityTypeRepository"/>
   </eClassifiers>
@@ -37,7 +37,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="EfficiencyCompliance" eSuperTypes="#//Efficiency"/>
   <eClassifiers xsi:type="ecore:EClass" name="Suitability" eSuperTypes="#//Functionality"/>
   <eClassifiers xsi:type="ecore:EClass" name="Learnability" eSuperTypes="#//Usability"/>
-  <eClassifiers xsi:type="ecore:EClass" name="QualityType" abstract="true" eSuperTypes="../../de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
+  <eClassifiers xsi:type="ecore:EClass" name="QualityType" abstract="true" eSuperTypes="platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore#//Identifier">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="qualityTypeRepository"
         lowerBound="1" eType="#//QualityTypeRepository" eOpposite="#//QualityTypeRepository/qualityType"/>
