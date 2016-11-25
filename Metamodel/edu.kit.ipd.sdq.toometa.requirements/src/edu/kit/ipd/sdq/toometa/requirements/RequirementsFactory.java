@@ -103,6 +103,24 @@ public interface RequirementsFactory extends EFactory {
 	ProcessRequirements createProcessRequirements();
 
 	/**
+	 * Returns a new object of class '<em>Usage Model Repository</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Usage Model Repository</em>'.
+	 * @generated
+	 */
+	UsageModelRepository createUsageModelRepository();
+
+	/**
+	 * Returns a new object of class '<em>Textual Usage Model</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Textual Usage Model</em>'.
+	 * @generated
+	 */
+	TextualUsageModel createTextualUsageModel();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

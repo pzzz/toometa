@@ -251,6 +251,28 @@ public class RequirementsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case RequirementsPackage.USAGE_MODEL_REPOSITORY: {
+				UsageModelRepository usageModelRepository = (UsageModelRepository)theEObject;
+				T result = caseUsageModelRepository(usageModelRepository);
+				if (result == null) result = caseIdentifier(usageModelRepository);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RequirementsPackage.USAGE_MODEL_ADAPTER: {
+				UsageModelAdapter usageModelAdapter = (UsageModelAdapter)theEObject;
+				T result = caseUsageModelAdapter(usageModelAdapter);
+				if (result == null) result = caseIdentifier(usageModelAdapter);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case RequirementsPackage.TEXTUAL_USAGE_MODEL: {
+				TextualUsageModel textualUsageModel = (TextualUsageModel)theEObject;
+				T result = caseTextualUsageModel(textualUsageModel);
+				if (result == null) result = caseUsageModelAdapter(textualUsageModel);
+				if (result == null) result = caseIdentifier(textualUsageModel);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -417,6 +439,51 @@ public class RequirementsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseProcessRequirements(ProcessRequirements object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Usage Model Repository</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Usage Model Repository</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUsageModelRepository(UsageModelRepository object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Usage Model Adapter</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Usage Model Adapter</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUsageModelAdapter(UsageModelAdapter object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Textual Usage Model</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Textual Usage Model</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTextualUsageModel(TextualUsageModel object) {
 		return null;
 	}
 

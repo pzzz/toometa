@@ -114,13 +114,22 @@ public interface RequirementsPackage extends EPackage {
 	int REQ_REPOSITORY__SYSTEM_REQ_SECTION = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 3;
 
 	/**
+	 * The feature id for the '<em><b>Usage Model Section</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQ_REPOSITORY__USAGE_MODEL_SECTION = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Req Repository</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REQ_REPOSITORY_FEATURE_COUNT = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 4;
+	int REQ_REPOSITORY_FEATURE_COUNT = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 5;
 
 	/**
 	 * The meta object id for the '{@link edu.kit.ipd.sdq.toometa.requirements.impl.RequirementImpl <em>Requirement</em>}' class.
@@ -900,13 +909,22 @@ public interface RequirementsPackage extends EPackage {
 	int SYSTEM_REQUIREMENT__REPOSITORY = REQUIREMENT__REPOSITORY;
 
 	/**
+	 * The feature id for the '<em><b>Exception Usage Model</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_REQUIREMENT__EXCEPTION_USAGE_MODEL = REQUIREMENT_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>System Requirement</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_REQUIREMENT_FEATURE_COUNT = REQUIREMENT_FEATURE_COUNT + 0;
+	int SYSTEM_REQUIREMENT_FEATURE_COUNT = REQUIREMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link edu.kit.ipd.sdq.toometa.requirements.impl.ProcessRequirementImpl <em>Process Requirement</em>}' class.
@@ -1424,6 +1442,15 @@ public interface RequirementsPackage extends EPackage {
 	int CONSTRAINT__REPOSITORY = SYSTEM_REQUIREMENT__REPOSITORY;
 
 	/**
+	 * The feature id for the '<em><b>Exception Usage Model</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT__EXCEPTION_USAGE_MODEL = SYSTEM_REQUIREMENT__EXCEPTION_USAGE_MODEL;
+
+	/**
 	 * The number of structural features of the '<em>Constraint</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1684,6 +1711,15 @@ public interface RequirementsPackage extends EPackage {
 	 * @ordered
 	 */
 	int FUNCTIONAL_REQUIREMENT__REPOSITORY = SYSTEM_REQUIREMENT__REPOSITORY;
+
+	/**
+	 * The feature id for the '<em><b>Exception Usage Model</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTIONAL_REQUIREMENT__EXCEPTION_USAGE_MODEL = SYSTEM_REQUIREMENT__EXCEPTION_USAGE_MODEL;
 
 	/**
 	 * The number of structural features of the '<em>Functional Requirement</em>' class.
@@ -1948,6 +1984,15 @@ public interface RequirementsPackage extends EPackage {
 	int QUALITY_REQUIREMENT__REPOSITORY = SYSTEM_REQUIREMENT__REPOSITORY;
 
 	/**
+	 * The feature id for the '<em><b>Exception Usage Model</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUALITY_REQUIREMENT__EXCEPTION_USAGE_MODEL = SYSTEM_REQUIREMENT__EXCEPTION_USAGE_MODEL;
+
+	/**
 	 * The feature id for the '<em><b>Quality Type</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2031,13 +2076,22 @@ public interface RequirementsPackage extends EPackage {
 	int SYSTEM_REQUIREMENTS__SYSTEM_REQUIREMENTS = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Default Usage Model</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_REQUIREMENTS__DEFAULT_USAGE_MODEL = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>System Requirements</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_REQUIREMENTS_FEATURE_COUNT = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 1;
+	int SYSTEM_REQUIREMENTS_FEATURE_COUNT = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link edu.kit.ipd.sdq.toometa.requirements.impl.ProcessRequirementsImpl <em>Process Requirements</em>}' class.
@@ -2077,6 +2131,108 @@ public interface RequirementsPackage extends EPackage {
 	int PROCESS_REQUIREMENTS_FEATURE_COUNT = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link edu.kit.ipd.sdq.toometa.requirements.impl.UsageModelRepositoryImpl <em>Usage Model Repository</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see edu.kit.ipd.sdq.toometa.requirements.impl.UsageModelRepositoryImpl
+	 * @see edu.kit.ipd.sdq.toometa.requirements.impl.RequirementsPackageImpl#getUsageModelRepository()
+	 * @generated
+	 */
+	int USAGE_MODEL_REPOSITORY = 11;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USAGE_MODEL_REPOSITORY__ID = IdentifierPackage.IDENTIFIER__ID;
+
+	/**
+	 * The feature id for the '<em><b>Usage Model Adapters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USAGE_MODEL_REPOSITORY__USAGE_MODEL_ADAPTERS = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Usage Model Repository</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USAGE_MODEL_REPOSITORY_FEATURE_COUNT = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link edu.kit.ipd.sdq.toometa.requirements.impl.UsageModelAdapterImpl <em>Usage Model Adapter</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see edu.kit.ipd.sdq.toometa.requirements.impl.UsageModelAdapterImpl
+	 * @see edu.kit.ipd.sdq.toometa.requirements.impl.RequirementsPackageImpl#getUsageModelAdapter()
+	 * @generated
+	 */
+	int USAGE_MODEL_ADAPTER = 12;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USAGE_MODEL_ADAPTER__ID = IdentifierPackage.IDENTIFIER__ID;
+
+	/**
+	 * The number of structural features of the '<em>Usage Model Adapter</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USAGE_MODEL_ADAPTER_FEATURE_COUNT = IdentifierPackage.IDENTIFIER_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link edu.kit.ipd.sdq.toometa.requirements.impl.TextualUsageModelImpl <em>Textual Usage Model</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see edu.kit.ipd.sdq.toometa.requirements.impl.TextualUsageModelImpl
+	 * @see edu.kit.ipd.sdq.toometa.requirements.impl.RequirementsPackageImpl#getTextualUsageModel()
+	 * @generated
+	 */
+	int TEXTUAL_USAGE_MODEL = 13;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEXTUAL_USAGE_MODEL__ID = USAGE_MODEL_ADAPTER__ID;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEXTUAL_USAGE_MODEL__DESCRIPTION = USAGE_MODEL_ADAPTER_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Textual Usage Model</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEXTUAL_USAGE_MODEL_FEATURE_COUNT = USAGE_MODEL_ADAPTER_FEATURE_COUNT + 1;
+
+	/**
 	 * The meta object id for the '{@link edu.kit.ipd.sdq.toometa.requirements.ReqPriorityEnum <em>Req Priority Enum</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2084,7 +2240,7 @@ public interface RequirementsPackage extends EPackage {
 	 * @see edu.kit.ipd.sdq.toometa.requirements.impl.RequirementsPackageImpl#getReqPriorityEnum()
 	 * @generated
 	 */
-	int REQ_PRIORITY_ENUM = 11;
+	int REQ_PRIORITY_ENUM = 14;
 
 	/**
 	 * The meta object id for the '{@link edu.kit.ipd.sdq.toometa.requirements.ReqStatusEnum <em>Req Status Enum</em>}' enum.
@@ -2094,7 +2250,7 @@ public interface RequirementsPackage extends EPackage {
 	 * @see edu.kit.ipd.sdq.toometa.requirements.impl.RequirementsPackageImpl#getReqStatusEnum()
 	 * @generated
 	 */
-	int REQ_STATUS_ENUM = 12;
+	int REQ_STATUS_ENUM = 15;
 
 
 	/**
@@ -2150,6 +2306,17 @@ public interface RequirementsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getReqRepository_SystemReqSection();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link edu.kit.ipd.sdq.toometa.requirements.ReqRepository#getUsageModelSection <em>Usage Model Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Usage Model Section</em>'.
+	 * @see edu.kit.ipd.sdq.toometa.requirements.ReqRepository#getUsageModelSection()
+	 * @see #getReqRepository()
+	 * @generated
+	 */
+	EReference getReqRepository_UsageModelSection();
 
 	/**
 	 * Returns the meta object for class '{@link edu.kit.ipd.sdq.toometa.requirements.Requirement <em>Requirement</em>}'.
@@ -2235,6 +2402,17 @@ public interface RequirementsPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSystemRequirement();
+
+	/**
+	 * Returns the meta object for the reference '{@link edu.kit.ipd.sdq.toometa.requirements.SystemRequirement#getExceptionUsageModel <em>Exception Usage Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Exception Usage Model</em>'.
+	 * @see edu.kit.ipd.sdq.toometa.requirements.SystemRequirement#getExceptionUsageModel()
+	 * @see #getSystemRequirement()
+	 * @generated
+	 */
+	EReference getSystemRequirement_ExceptionUsageModel();
 
 	/**
 	 * Returns the meta object for class '{@link edu.kit.ipd.sdq.toometa.requirements.ProcessRequirement <em>Process Requirement</em>}'.
@@ -2330,6 +2508,17 @@ public interface RequirementsPackage extends EPackage {
 	EReference getSystemRequirements_SystemRequirements();
 
 	/**
+	 * Returns the meta object for the reference '{@link edu.kit.ipd.sdq.toometa.requirements.SystemRequirements#getDefaultUsageModel <em>Default Usage Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Default Usage Model</em>'.
+	 * @see edu.kit.ipd.sdq.toometa.requirements.SystemRequirements#getDefaultUsageModel()
+	 * @see #getSystemRequirements()
+	 * @generated
+	 */
+	EReference getSystemRequirements_DefaultUsageModel();
+
+	/**
 	 * Returns the meta object for class '{@link edu.kit.ipd.sdq.toometa.requirements.ProcessRequirements <em>Process Requirements</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2349,6 +2538,58 @@ public interface RequirementsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getProcessRequirements_ProcessRrequirements();
+
+	/**
+	 * Returns the meta object for class '{@link edu.kit.ipd.sdq.toometa.requirements.UsageModelRepository <em>Usage Model Repository</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Usage Model Repository</em>'.
+	 * @see edu.kit.ipd.sdq.toometa.requirements.UsageModelRepository
+	 * @generated
+	 */
+	EClass getUsageModelRepository();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link edu.kit.ipd.sdq.toometa.requirements.UsageModelRepository#getUsageModelAdapters <em>Usage Model Adapters</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Usage Model Adapters</em>'.
+	 * @see edu.kit.ipd.sdq.toometa.requirements.UsageModelRepository#getUsageModelAdapters()
+	 * @see #getUsageModelRepository()
+	 * @generated
+	 */
+	EReference getUsageModelRepository_UsageModelAdapters();
+
+	/**
+	 * Returns the meta object for class '{@link edu.kit.ipd.sdq.toometa.requirements.UsageModelAdapter <em>Usage Model Adapter</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Usage Model Adapter</em>'.
+	 * @see edu.kit.ipd.sdq.toometa.requirements.UsageModelAdapter
+	 * @generated
+	 */
+	EClass getUsageModelAdapter();
+
+	/**
+	 * Returns the meta object for class '{@link edu.kit.ipd.sdq.toometa.requirements.TextualUsageModel <em>Textual Usage Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Textual Usage Model</em>'.
+	 * @see edu.kit.ipd.sdq.toometa.requirements.TextualUsageModel
+	 * @generated
+	 */
+	EClass getTextualUsageModel();
+
+	/**
+	 * Returns the meta object for the attribute '{@link edu.kit.ipd.sdq.toometa.requirements.TextualUsageModel#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see edu.kit.ipd.sdq.toometa.requirements.TextualUsageModel#getDescription()
+	 * @see #getTextualUsageModel()
+	 * @generated
+	 */
+	EAttribute getTextualUsageModel_Description();
 
 	/**
 	 * Returns the meta object for enum '{@link edu.kit.ipd.sdq.toometa.requirements.ReqPriorityEnum <em>Req Priority Enum</em>}'.
@@ -2435,6 +2676,14 @@ public interface RequirementsPackage extends EPackage {
 		EReference REQ_REPOSITORY__SYSTEM_REQ_SECTION = eINSTANCE.getReqRepository_SystemReqSection();
 
 		/**
+		 * The meta object literal for the '<em><b>Usage Model Section</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference REQ_REPOSITORY__USAGE_MODEL_SECTION = eINSTANCE.getReqRepository_UsageModelSection();
+
+		/**
 		 * The meta object literal for the '{@link edu.kit.ipd.sdq.toometa.requirements.impl.RequirementImpl <em>Requirement</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2503,6 +2752,14 @@ public interface RequirementsPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SYSTEM_REQUIREMENT = eINSTANCE.getSystemRequirement();
+
+		/**
+		 * The meta object literal for the '<em><b>Exception Usage Model</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM_REQUIREMENT__EXCEPTION_USAGE_MODEL = eINSTANCE.getSystemRequirement_ExceptionUsageModel();
 
 		/**
 		 * The meta object literal for the '{@link edu.kit.ipd.sdq.toometa.requirements.impl.ProcessRequirementImpl <em>Process Requirement</em>}' class.
@@ -2589,6 +2846,14 @@ public interface RequirementsPackage extends EPackage {
 		EReference SYSTEM_REQUIREMENTS__SYSTEM_REQUIREMENTS = eINSTANCE.getSystemRequirements_SystemRequirements();
 
 		/**
+		 * The meta object literal for the '<em><b>Default Usage Model</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM_REQUIREMENTS__DEFAULT_USAGE_MODEL = eINSTANCE.getSystemRequirements_DefaultUsageModel();
+
+		/**
 		 * The meta object literal for the '{@link edu.kit.ipd.sdq.toometa.requirements.impl.ProcessRequirementsImpl <em>Process Requirements</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2605,6 +2870,52 @@ public interface RequirementsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PROCESS_REQUIREMENTS__PROCESS_RREQUIREMENTS = eINSTANCE.getProcessRequirements_ProcessRrequirements();
+
+		/**
+		 * The meta object literal for the '{@link edu.kit.ipd.sdq.toometa.requirements.impl.UsageModelRepositoryImpl <em>Usage Model Repository</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see edu.kit.ipd.sdq.toometa.requirements.impl.UsageModelRepositoryImpl
+		 * @see edu.kit.ipd.sdq.toometa.requirements.impl.RequirementsPackageImpl#getUsageModelRepository()
+		 * @generated
+		 */
+		EClass USAGE_MODEL_REPOSITORY = eINSTANCE.getUsageModelRepository();
+
+		/**
+		 * The meta object literal for the '<em><b>Usage Model Adapters</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference USAGE_MODEL_REPOSITORY__USAGE_MODEL_ADAPTERS = eINSTANCE.getUsageModelRepository_UsageModelAdapters();
+
+		/**
+		 * The meta object literal for the '{@link edu.kit.ipd.sdq.toometa.requirements.impl.UsageModelAdapterImpl <em>Usage Model Adapter</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see edu.kit.ipd.sdq.toometa.requirements.impl.UsageModelAdapterImpl
+		 * @see edu.kit.ipd.sdq.toometa.requirements.impl.RequirementsPackageImpl#getUsageModelAdapter()
+		 * @generated
+		 */
+		EClass USAGE_MODEL_ADAPTER = eINSTANCE.getUsageModelAdapter();
+
+		/**
+		 * The meta object literal for the '{@link edu.kit.ipd.sdq.toometa.requirements.impl.TextualUsageModelImpl <em>Textual Usage Model</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see edu.kit.ipd.sdq.toometa.requirements.impl.TextualUsageModelImpl
+		 * @see edu.kit.ipd.sdq.toometa.requirements.impl.RequirementsPackageImpl#getTextualUsageModel()
+		 * @generated
+		 */
+		EClass TEXTUAL_USAGE_MODEL = eINSTANCE.getTextualUsageModel();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEXTUAL_USAGE_MODEL__DESCRIPTION = eINSTANCE.getTextualUsageModel_Description();
 
 		/**
 		 * The meta object literal for the '{@link edu.kit.ipd.sdq.toometa.requirements.ReqPriorityEnum <em>Req Priority Enum</em>}' enum.

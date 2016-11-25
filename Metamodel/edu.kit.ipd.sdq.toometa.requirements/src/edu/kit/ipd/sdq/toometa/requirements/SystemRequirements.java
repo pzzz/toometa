@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  * <ul>
  *   <li>{@link edu.kit.ipd.sdq.toometa.requirements.SystemRequirements#getSystemRequirements <em>System Requirements</em>}</li>
+ *   <li>{@link edu.kit.ipd.sdq.toometa.requirements.SystemRequirements#getDefaultUsageModel <em>Default Usage Model</em>}</li>
  * </ul>
  *
  * @see edu.kit.ipd.sdq.toometa.requirements.RequirementsPackage#getSystemRequirements()
@@ -38,5 +39,31 @@ public interface SystemRequirements extends Identifier {
 	 * @generated
 	 */
 	EList<SystemRequirement> getSystemRequirements();
+
+	/**
+	 * Returns the value of the '<em><b>Default Usage Model</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Default Usage Model</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Default Usage Model</em>' reference.
+	 * @see #setDefaultUsageModel(UsageModelAdapter)
+	 * @see edu.kit.ipd.sdq.toometa.requirements.RequirementsPackage#getSystemRequirements_DefaultUsageModel()
+	 * @model
+	 * @generated
+	 */
+	UsageModelAdapter getDefaultUsageModel();
+
+	/**
+	 * Sets the value of the '{@link edu.kit.ipd.sdq.toometa.requirements.SystemRequirements#getDefaultUsageModel <em>Default Usage Model</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Default Usage Model</em>' reference.
+	 * @see #getDefaultUsageModel()
+	 * @generated
+	 */
+	void setDefaultUsageModel(UsageModelAdapter value);
 
 } // SystemRequirements

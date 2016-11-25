@@ -66,6 +66,8 @@ public class RequirementsFactoryImpl extends EFactoryImpl implements Requirement
 			case RequirementsPackage.PROJECT_REQUIREMENTS: return (EObject)createProjectRequirements();
 			case RequirementsPackage.SYSTEM_REQUIREMENTS: return (EObject)createSystemRequirements();
 			case RequirementsPackage.PROCESS_REQUIREMENTS: return (EObject)createProcessRequirements();
+			case RequirementsPackage.USAGE_MODEL_REPOSITORY: return (EObject)createUsageModelRepository();
+			case RequirementsPackage.TEXTUAL_USAGE_MODEL: return (EObject)createTextualUsageModel();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -193,6 +195,26 @@ public class RequirementsFactoryImpl extends EFactoryImpl implements Requirement
 	public ProcessRequirements createProcessRequirements() {
 		ProcessRequirementsImpl processRequirements = new ProcessRequirementsImpl();
 		return processRequirements;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UsageModelRepository createUsageModelRepository() {
+		UsageModelRepositoryImpl usageModelRepository = new UsageModelRepositoryImpl();
+		return usageModelRepository;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TextualUsageModel createTextualUsageModel() {
+		TextualUsageModelImpl textualUsageModel = new TextualUsageModelImpl();
+		return textualUsageModel;
 	}
 
 	/**

@@ -20,6 +20,7 @@ import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EStructuralFeature;
 
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
+import org.eclipse.emf.edit.provider.IChildCreationExtender;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
@@ -94,6 +95,7 @@ public class ReqRepositoryItemProvider extends IdentifierItemProvider {
 			childrenFeatures.add(RequirementsPackage.Literals.REQ_REPOSITORY__PROJECT_REQ_SECTION);
 			childrenFeatures.add(RequirementsPackage.Literals.REQ_REPOSITORY__PROCESS_REQ_SECTION);
 			childrenFeatures.add(RequirementsPackage.Literals.REQ_REPOSITORY__SYSTEM_REQ_SECTION);
+			childrenFeatures.add(RequirementsPackage.Literals.REQ_REPOSITORY__USAGE_MODEL_SECTION);
 		}
 		return childrenFeatures;
 	}
@@ -155,6 +157,7 @@ public class ReqRepositoryItemProvider extends IdentifierItemProvider {
 			case RequirementsPackage.REQ_REPOSITORY__PROJECT_REQ_SECTION:
 			case RequirementsPackage.REQ_REPOSITORY__PROCESS_REQ_SECTION:
 			case RequirementsPackage.REQ_REPOSITORY__SYSTEM_REQ_SECTION:
+			case RequirementsPackage.REQ_REPOSITORY__USAGE_MODEL_SECTION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -186,6 +189,11 @@ public class ReqRepositoryItemProvider extends IdentifierItemProvider {
 			(createChildParameter
 				(RequirementsPackage.Literals.REQ_REPOSITORY__SYSTEM_REQ_SECTION,
 				 RequirementsFactory.eINSTANCE.createSystemRequirements()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(RequirementsPackage.Literals.REQ_REPOSITORY__USAGE_MODEL_SECTION,
+				 RequirementsFactory.eINSTANCE.createUsageModelRepository()));
 	}
 
 	/**
@@ -196,7 +204,7 @@ public class ReqRepositoryItemProvider extends IdentifierItemProvider {
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
-		return RequirementsEditPlugin.INSTANCE;
+		return ((IChildCreationExtender)adapterFactory).getResourceLocator();
 	}
 
 }

@@ -10,6 +10,7 @@ import edu.kit.ipd.sdq.toometa.requirements.ReqRepository;
 import edu.kit.ipd.sdq.toometa.requirements.RequirementsPackage;
 import edu.kit.ipd.sdq.toometa.requirements.SystemRequirements;
 
+import edu.kit.ipd.sdq.toometa.requirements.UsageModelRepository;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.ecore.EClass;
@@ -27,6 +28,7 @@ import org.eclipse.emf.ecore.InternalEObject;
  *   <li>{@link edu.kit.ipd.sdq.toometa.requirements.impl.ReqRepositoryImpl#getProjectReqSection <em>Project Req Section</em>}</li>
  *   <li>{@link edu.kit.ipd.sdq.toometa.requirements.impl.ReqRepositoryImpl#getProcessReqSection <em>Process Req Section</em>}</li>
  *   <li>{@link edu.kit.ipd.sdq.toometa.requirements.impl.ReqRepositoryImpl#getSystemReqSection <em>System Req Section</em>}</li>
+ *   <li>{@link edu.kit.ipd.sdq.toometa.requirements.impl.ReqRepositoryImpl#getUsageModelSection <em>Usage Model Section</em>}</li>
  * </ul>
  *
  * @generated
@@ -168,6 +170,34 @@ public class ReqRepositoryImpl extends IdentifierImpl implements ReqRepository {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public UsageModelRepository getUsageModelSection() {
+		return (UsageModelRepository)eDynamicGet(RequirementsPackage.REQ_REPOSITORY__USAGE_MODEL_SECTION, RequirementsPackage.Literals.REQ_REPOSITORY__USAGE_MODEL_SECTION, true, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetUsageModelSection(UsageModelRepository newUsageModelSection, NotificationChain msgs) {
+		msgs = eDynamicInverseAdd((InternalEObject)newUsageModelSection, RequirementsPackage.REQ_REPOSITORY__USAGE_MODEL_SECTION, msgs);
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setUsageModelSection(UsageModelRepository newUsageModelSection) {
+		eDynamicSet(RequirementsPackage.REQ_REPOSITORY__USAGE_MODEL_SECTION, RequirementsPackage.Literals.REQ_REPOSITORY__USAGE_MODEL_SECTION, newUsageModelSection);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -177,6 +207,8 @@ public class ReqRepositoryImpl extends IdentifierImpl implements ReqRepository {
 				return basicSetProcessReqSection(null, msgs);
 			case RequirementsPackage.REQ_REPOSITORY__SYSTEM_REQ_SECTION:
 				return basicSetSystemReqSection(null, msgs);
+			case RequirementsPackage.REQ_REPOSITORY__USAGE_MODEL_SECTION:
+				return basicSetUsageModelSection(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -197,6 +229,8 @@ public class ReqRepositoryImpl extends IdentifierImpl implements ReqRepository {
 				return getProcessReqSection();
 			case RequirementsPackage.REQ_REPOSITORY__SYSTEM_REQ_SECTION:
 				return getSystemReqSection();
+			case RequirementsPackage.REQ_REPOSITORY__USAGE_MODEL_SECTION:
+				return getUsageModelSection();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -220,6 +254,9 @@ public class ReqRepositoryImpl extends IdentifierImpl implements ReqRepository {
 				return;
 			case RequirementsPackage.REQ_REPOSITORY__SYSTEM_REQ_SECTION:
 				setSystemReqSection((SystemRequirements)newValue);
+				return;
+			case RequirementsPackage.REQ_REPOSITORY__USAGE_MODEL_SECTION:
+				setUsageModelSection((UsageModelRepository)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -245,6 +282,9 @@ public class ReqRepositoryImpl extends IdentifierImpl implements ReqRepository {
 			case RequirementsPackage.REQ_REPOSITORY__SYSTEM_REQ_SECTION:
 				setSystemReqSection((SystemRequirements)null);
 				return;
+			case RequirementsPackage.REQ_REPOSITORY__USAGE_MODEL_SECTION:
+				setUsageModelSection((UsageModelRepository)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -265,6 +305,8 @@ public class ReqRepositoryImpl extends IdentifierImpl implements ReqRepository {
 				return getProcessReqSection() != null;
 			case RequirementsPackage.REQ_REPOSITORY__SYSTEM_REQ_SECTION:
 				return getSystemReqSection() != null;
+			case RequirementsPackage.REQ_REPOSITORY__USAGE_MODEL_SECTION:
+				return getUsageModelSection() != null;
 		}
 		return super.eIsSet(featureID);
 	}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated pcmusagemodeladapter -->
+      <package
+            uri="http://sdq.ipd.kit.edu/toometa/pcmusagemodeladapter/1.0"
+            class="pcmusagemodeladapter.PcmusagemodeladapterPackage"
+            genModel="model/pcmusagemodeladapter.genmodel"/>
+   </extension>
+
+</plugin>

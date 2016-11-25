@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated pcmusagemodeladapter -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="pcmusagemodeladapter.presentation.PcmusagemodeladapterModelWizardID"
+            name="%_UI_PcmusagemodeladapterModelWizard_label"
+            class="pcmusagemodeladapter.presentation.PcmusagemodeladapterModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/PcmusagemodeladapterModelFile.gif">
+         <description>%_UI_PcmusagemodeladapterModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated pcmusagemodeladapter -->
+      <editor
+            id="pcmusagemodeladapter.presentation.PcmusagemodeladapterEditorID"
+            name="%_UI_PcmusagemodeladapterEditor_label"
+            icon="icons/full/obj16/PcmusagemodeladapterModelFile.gif"
+            extensions="pcmusagemodeladapter"
+            class="pcmusagemodeladapter.presentation.PcmusagemodeladapterEditor"
+            contributorClass="pcmusagemodeladapter.presentation.PcmusagemodeladapterActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

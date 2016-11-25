@@ -127,6 +127,18 @@ public class RequirementsAdapterFactory extends AdapterFactoryImpl {
 				return createProcessRequirementsAdapter();
 			}
 			@Override
+			public Adapter caseUsageModelRepository(UsageModelRepository object) {
+				return createUsageModelRepositoryAdapter();
+			}
+			@Override
+			public Adapter caseUsageModelAdapter(UsageModelAdapter object) {
+				return createUsageModelAdapterAdapter();
+			}
+			@Override
+			public Adapter caseTextualUsageModel(TextualUsageModel object) {
+				return createTextualUsageModelAdapter();
+			}
+			@Override
 			public Adapter caseIdentifier(Identifier object) {
 				return createIdentifierAdapter();
 			}
@@ -349,6 +361,48 @@ public class RequirementsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createProcessRequirementsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link edu.kit.ipd.sdq.toometa.requirements.UsageModelRepository <em>Usage Model Repository</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see edu.kit.ipd.sdq.toometa.requirements.UsageModelRepository
+	 * @generated
+	 */
+	public Adapter createUsageModelRepositoryAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link edu.kit.ipd.sdq.toometa.requirements.UsageModelAdapter <em>Usage Model Adapter</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see edu.kit.ipd.sdq.toometa.requirements.UsageModelAdapter
+	 * @generated
+	 */
+	public Adapter createUsageModelAdapterAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link edu.kit.ipd.sdq.toometa.requirements.TextualUsageModel <em>Textual Usage Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see edu.kit.ipd.sdq.toometa.requirements.TextualUsageModel
+	 * @generated
+	 */
+	public Adapter createTextualUsageModelAdapter() {
 		return null;
 	}
 

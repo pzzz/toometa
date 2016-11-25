@@ -26,6 +26,9 @@ import edu.kit.ipd.sdq.toometa.requirements.RequirementsPackage;
 import edu.kit.ipd.sdq.toometa.requirements.SystemRequirement;
 import edu.kit.ipd.sdq.toometa.requirements.SystemRequirements;
 
+import edu.kit.ipd.sdq.toometa.requirements.TextualUsageModel;
+import edu.kit.ipd.sdq.toometa.requirements.UsageModelAdapter;
+import edu.kit.ipd.sdq.toometa.requirements.UsageModelRepository;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
@@ -117,6 +120,27 @@ public class RequirementsPackageImpl extends EPackageImpl implements Requirement
 	 * @generated
 	 */
 	private EClass processRequirementsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass usageModelRepositoryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass usageModelAdapterEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass textualUsageModelEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,6 +272,15 @@ public class RequirementsPackageImpl extends EPackageImpl implements Requirement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getReqRepository_UsageModelSection() {
+		return (EReference)reqRepositoryEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getRequirement() {
 		return requirementEClass;
 	}
@@ -313,6 +346,15 @@ public class RequirementsPackageImpl extends EPackageImpl implements Requirement
 	 */
 	public EClass getSystemRequirement() {
 		return systemRequirementEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSystemRequirement_ExceptionUsageModel() {
+		return (EReference)systemRequirementEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -401,6 +443,15 @@ public class RequirementsPackageImpl extends EPackageImpl implements Requirement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getSystemRequirements_DefaultUsageModel() {
+		return (EReference)systemRequirementsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getProcessRequirements() {
 		return processRequirementsEClass;
 	}
@@ -412,6 +463,51 @@ public class RequirementsPackageImpl extends EPackageImpl implements Requirement
 	 */
 	public EReference getProcessRequirements_ProcessRrequirements() {
 		return (EReference)processRequirementsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getUsageModelRepository() {
+		return usageModelRepositoryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getUsageModelRepository_UsageModelAdapters() {
+		return (EReference)usageModelRepositoryEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getUsageModelAdapter() {
+		return usageModelAdapterEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getTextualUsageModel() {
+		return textualUsageModelEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getTextualUsageModel_Description() {
+		return (EAttribute)textualUsageModelEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -465,6 +561,7 @@ public class RequirementsPackageImpl extends EPackageImpl implements Requirement
 		createEReference(reqRepositoryEClass, REQ_REPOSITORY__PROJECT_REQ_SECTION);
 		createEReference(reqRepositoryEClass, REQ_REPOSITORY__PROCESS_REQ_SECTION);
 		createEReference(reqRepositoryEClass, REQ_REPOSITORY__SYSTEM_REQ_SECTION);
+		createEReference(reqRepositoryEClass, REQ_REPOSITORY__USAGE_MODEL_SECTION);
 
 		requirementEClass = createEClass(REQUIREMENT);
 		createEAttribute(requirementEClass, REQUIREMENT__SPECIFICATION);
@@ -476,6 +573,7 @@ public class RequirementsPackageImpl extends EPackageImpl implements Requirement
 		projectRequirementEClass = createEClass(PROJECT_REQUIREMENT);
 
 		systemRequirementEClass = createEClass(SYSTEM_REQUIREMENT);
+		createEReference(systemRequirementEClass, SYSTEM_REQUIREMENT__EXCEPTION_USAGE_MODEL);
 
 		processRequirementEClass = createEClass(PROCESS_REQUIREMENT);
 
@@ -491,9 +589,18 @@ public class RequirementsPackageImpl extends EPackageImpl implements Requirement
 
 		systemRequirementsEClass = createEClass(SYSTEM_REQUIREMENTS);
 		createEReference(systemRequirementsEClass, SYSTEM_REQUIREMENTS__SYSTEM_REQUIREMENTS);
+		createEReference(systemRequirementsEClass, SYSTEM_REQUIREMENTS__DEFAULT_USAGE_MODEL);
 
 		processRequirementsEClass = createEClass(PROCESS_REQUIREMENTS);
 		createEReference(processRequirementsEClass, PROCESS_REQUIREMENTS__PROCESS_RREQUIREMENTS);
+
+		usageModelRepositoryEClass = createEClass(USAGE_MODEL_REPOSITORY);
+		createEReference(usageModelRepositoryEClass, USAGE_MODEL_REPOSITORY__USAGE_MODEL_ADAPTERS);
+
+		usageModelAdapterEClass = createEClass(USAGE_MODEL_ADAPTER);
+
+		textualUsageModelEClass = createEClass(TEXTUAL_USAGE_MODEL);
+		createEAttribute(textualUsageModelEClass, TEXTUAL_USAGE_MODEL__DESCRIPTION);
 
 		// Create enums
 		reqPriorityEnumEEnum = createEEnum(REQ_PRIORITY_ENUM);
@@ -546,6 +653,9 @@ public class RequirementsPackageImpl extends EPackageImpl implements Requirement
 		projectRequirementsEClass.getESuperTypes().add(theIdentifierPackage.getIdentifier());
 		systemRequirementsEClass.getESuperTypes().add(theIdentifierPackage.getIdentifier());
 		processRequirementsEClass.getESuperTypes().add(theIdentifierPackage.getIdentifier());
+		usageModelRepositoryEClass.getESuperTypes().add(theIdentifierPackage.getIdentifier());
+		usageModelAdapterEClass.getESuperTypes().add(theIdentifierPackage.getIdentifier());
+		textualUsageModelEClass.getESuperTypes().add(this.getUsageModelAdapter());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(reqRepositoryEClass, ReqRepository.class, "ReqRepository", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -553,6 +663,7 @@ public class RequirementsPackageImpl extends EPackageImpl implements Requirement
 		initEReference(getReqRepository_ProjectReqSection(), this.getProjectRequirements(), null, "projectReqSection", null, 0, 1, ReqRepository.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReqRepository_ProcessReqSection(), this.getProcessRequirements(), null, "processReqSection", null, 0, 1, ReqRepository.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReqRepository_SystemReqSection(), this.getSystemRequirements(), null, "systemReqSection", null, 0, 1, ReqRepository.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getReqRepository_UsageModelSection(), this.getUsageModelRepository(), null, "usageModelSection", null, 0, 1, ReqRepository.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(requirementEClass, Requirement.class, "Requirement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRequirement_Specification(), ecorePackage.getEString(), "specification", "Write a specification here ....", 1, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -564,6 +675,7 @@ public class RequirementsPackageImpl extends EPackageImpl implements Requirement
 		initEClass(projectRequirementEClass, ProjectRequirement.class, "ProjectRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(systemRequirementEClass, SystemRequirement.class, "SystemRequirement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSystemRequirement_ExceptionUsageModel(), this.getUsageModelAdapter(), null, "exceptionUsageModel", null, 0, 1, SystemRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(processRequirementEClass, ProcessRequirement.class, "ProcessRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -579,9 +691,18 @@ public class RequirementsPackageImpl extends EPackageImpl implements Requirement
 
 		initEClass(systemRequirementsEClass, SystemRequirements.class, "SystemRequirements", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSystemRequirements_SystemRequirements(), this.getSystemRequirement(), null, "systemRequirements", null, 0, -1, SystemRequirements.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSystemRequirements_DefaultUsageModel(), this.getUsageModelAdapter(), null, "defaultUsageModel", null, 0, 1, SystemRequirements.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(processRequirementsEClass, ProcessRequirements.class, "ProcessRequirements", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProcessRequirements_ProcessRrequirements(), this.getProcessRequirement(), null, "processRrequirements", null, 0, -1, ProcessRequirements.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(usageModelRepositoryEClass, UsageModelRepository.class, "UsageModelRepository", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getUsageModelRepository_UsageModelAdapters(), this.getUsageModelAdapter(), null, "usageModelAdapters", null, 0, -1, UsageModelRepository.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(usageModelAdapterEClass, UsageModelAdapter.class, "UsageModelAdapter", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(textualUsageModelEClass, TextualUsageModel.class, "TextualUsageModel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getTextualUsageModel_Description(), ecorePackage.getEString(), "description", null, 0, 1, TextualUsageModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(reqPriorityEnumEEnum, ReqPriorityEnum.class, "ReqPriorityEnum");

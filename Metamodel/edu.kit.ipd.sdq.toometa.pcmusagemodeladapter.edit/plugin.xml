@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
+      <!-- @generated pcmusagemodeladapter -->
+      <factory
+            uri="http://sdq.ipd.kit.edu/toometa/pcmusagemodeladapter/1.0"
+            class="pcmusagemodeladapter.provider.PcmusagemodeladapterItemProviderAdapterFactory"
+            supportedTypes=
+              "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
+               org.eclipse.emf.edit.provider.IStructuredItemContentProvider
+               org.eclipse.emf.edit.provider.ITreeItemContentProvider
+               org.eclipse.emf.edit.provider.IItemLabelProvider
+               org.eclipse.emf.edit.provider.IItemPropertySource"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.childCreationExtenders">
+      <!-- @generated pcmusagemodeladapter -->
+      <extender
+            uri="http://sdq.ipd.kit.edu/QML/dimensiontypes/1.0"
+            class="pcmusagemodeladapter.provider.PcmusagemodeladapterItemProviderAdapterFactory$DimensiontypesChildCreationExtender"/>
+      <extender
+            uri="http://sdq.ipd.kit.edu/toometa/requirements/1.0"
+            class="pcmusagemodeladapter.provider.PcmusagemodeladapterItemProviderAdapterFactory$RequirementsChildCreationExtender"/>
+   </extension>
+
+</plugin>

@@ -3,6 +3,7 @@
 package edu.kit.ipd.sdq.toometa.requirements.provider;
 
 
+import edu.kit.ipd.sdq.toometa.requirements.RequirementsPackage;
 import edu.kit.ipd.sdq.toometa.requirements.SystemRequirement;
 
 import java.util.Collection;
@@ -11,6 +12,7 @@ import java.util.List;
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 
 /**
@@ -41,8 +43,31 @@ public class SystemRequirementItemProvider extends RequirementItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addExceptionUsageModelPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Exception Usage Model feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addExceptionUsageModelPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SystemRequirement_exceptionUsageModel_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SystemRequirement_exceptionUsageModel_feature", "_UI_SystemRequirement_type"),
+				 RequirementsPackage.Literals.SYSTEM_REQUIREMENT__EXCEPTION_USAGE_MODEL,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
